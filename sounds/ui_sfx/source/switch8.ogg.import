@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/switch8.ogg-d3b06be5deb33f60ecdca172c0457e0c.oggstr"
+
+[deps]
+
+source_file="res://sounds/ui_sfx/source/switch8.ogg"
+dest_files=[ "res://.import/switch8.ogg-d3b06be5deb33f60ecdca172c0457e0c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

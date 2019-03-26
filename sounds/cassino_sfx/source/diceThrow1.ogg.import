@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/diceThrow1.ogg-03ba9eebd1bfc3b759d2f366fe9a1fa3.oggstr"
+
+[deps]
+
+source_file="res://sounds/cassino_sfx/source/diceThrow1.ogg"
+dest_files=[ "res://.import/diceThrow1.ogg-03ba9eebd1bfc3b759d2f366fe9a1fa3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

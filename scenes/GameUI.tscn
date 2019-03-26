@@ -1,0 +1,197 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scripts/GameUI.gd" type="Script" id=1]
+[ext_resource path="res://scripts/LevelViewport.gd" type="Script" id=2]
+[ext_resource path="res://scripts/UIScaler.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Menu.gd" type="Script" id=4]
+[ext_resource path="res://scripts/scenes/StatsScene/StatsScene.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/OptionsPage.tscn" type="PackedScene" id=6]
+[ext_resource path="res://themes/theme_test.tres" type="Theme" id=7]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=8]
+[ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=9]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="ButtonGroup" id=2]
+
+[node name="GameUI" type="Control"]
+pause_mode = 2
+self_modulate = Color( 1, 1, 1, 0 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [ -298.126 ]
+}
+
+[node name="LevelViewport" type="ViewportContainer" parent="." groups=[
+"Persist",
+]]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 1024.0
+margin_bottom = 600.0
+stretch = true
+script = ExtResource( 2 )
+
+[node name="Viewport" type="Viewport" parent="LevelViewport"]
+pause_mode = 1
+arvr = true
+size = Vector2( 1024, 600 )
+own_world = true
+handle_input_locally = false
+disable_3d = true
+usage = 0
+render_target_update_mode = 3
+
+[node name="UIScaler" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Menu" type="Panel" parent="UIScaler"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -410.625
+margin_top = -2.0
+margin_right = 622.375
+margin_bottom = 600.0
+script = ExtResource( 4 )
+
+[node name="StatsPage" parent="UIScaler/Menu" instance=ExtResource( 5 )]
+visible = false
+margin_left = 1098.25
+margin_top = -0.75
+margin_right = 943.251
+margin_bottom = 61.25
+
+[node name="OptionsPage" parent="UIScaler/Menu" instance=ExtResource( 6 )]
+margin_left = 479.251
+margin_right = 479.251
+
+[node name="Save_dialog" type="FileDialog" parent="UIScaler/Menu"]
+margin_left = 783.751
+margin_top = 119.5
+margin_right = 1192.75
+margin_bottom = 461.5
+theme = ExtResource( 7 )
+popup_exclusive = true
+resizable = true
+access = 2
+filters = PoolStringArray( "*.save" )
+current_dir = "/home/karol/Dokumenty/Pixel-Zone-master"
+current_path = "/home/karol/Dokumenty/Pixel-Zone-master/"
+
+[node name="Load_dialog" type="FileDialog" parent="UIScaler/Menu"]
+material = SubResource( 1 )
+margin_left = 867.001
+margin_top = 155.5
+margin_right = 1248.0
+margin_bottom = 497.5
+theme = ExtResource( 7 )
+popup_exclusive = true
+window_title = "Otwórz plik"
+resizable = true
+mode = 0
+access = 2
+filters = PoolStringArray( "*.save" )
+current_dir = "/home/karol/Dokumenty/Pixel-Zone-master"
+current_path = "/home/karol/Dokumenty/Pixel-Zone-master/"
+
+[node name="HBoxContainer" type="VBoxContainer" parent="UIScaler/Menu"]
+modulate = Color( 1, 0.956863, 0.956863, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -124.0
+margin_top = -266.0
+margin_right = 124.0
+margin_bottom = 259.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Save" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_right = 248.0
+margin_bottom = 84.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+text = "KEY_SAVE"
+flat = true
+
+[node name="Return" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_top = 88.0
+margin_right = 248.0
+margin_bottom = 172.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+text = "KEY_Return"
+flat = true
+
+[node name="Load" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_top = 176.0
+margin_right = 248.0
+margin_bottom = 260.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 2 )
+text = "KEY_Load"
+flat = true
+
+[node name="Options" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_top = 264.0
+margin_right = 248.0
+margin_bottom = 348.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 2 )
+text = "KEY_Options"
+flat = true
+
+[node name="Stats" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_top = 352.0
+margin_right = 248.0
+margin_bottom = 436.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 2 )
+text = "KEY_Stats"
+flat = true
+
+[node name="Quit" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_top = 440.0
+margin_right = 248.0
+margin_bottom = 525.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 2 )
+text = "KEY_Quit"
+flat = true
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="UIScaler/Menu"]
+volume_db = -10.0
+autoplay = true
+script = ExtResource( 9 )
+id = "Menu"
+
+[connection signal="file_selected" from="UIScaler/Menu/Save_dialog" to="UIScaler/Menu" method="_on_Save_dialog_file_selected"]
+[connection signal="file_selected" from="UIScaler/Menu/Load_dialog" to="UIScaler/Menu" method="_on_Load_dialog_file_selected"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Save" to="UIScaler/Menu" method="_on_Save_pressed"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Return" to="UIScaler/Menu" method="_on_Return_pressed"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Load" to="UIScaler/Menu" method="_on_Load_pressed"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Options" to="UIScaler/Menu" method="_on_Options_pressed"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Stats" to="UIScaler/Menu" method="_on_Stats_pressed"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Quit" to="UIScaler/Menu" method="_on_Quit_pressed"]

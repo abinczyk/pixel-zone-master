@@ -1,0 +1,77 @@
+,en,es,de,pl,it,pt,fr
+KEY_APPLY,Apply,Aplicar,Einreichen,Zastosuj,Applicare,Aplique,Appliquer
+KEY_CONTROLS,"W/Up – Jump
+A/Left – Left
+D/Right – Right
+Space – Shoot
+Shift - Speed  ","W / Up – Salto
+A / Izquierda – Izquierda
+D / Derecha – Derecha
+Espacio – disparar
+Cambio – velocidad","W / Up – Jump
+A / Links – Links
+D / rechts – richtig
+Weltraum – schießen
+Shift - Geschwindigkeit","W/Up – Skok
+A/Left – Lewo
+D/Right – Prawo
+Space – Strzał
+Shift - Przyspieszenie  ","W / Up – Salta
+A / Sinistra – Sinistra
+D / Destra – Destra
+Spazio – Spara
+Maiusc - Velocità","W / Up – Jump
+A / esquerda – esquerda
+D / Direita – Direita
+Espaço – Atirar
+Deslocamento – Velocidade","W / Up – Jump
+A / Gauche – Gauche
+D / Droite – Droite
+Space – Shoot
+Shift - Vitesse"
+KEY_GRAPHICS,Graphics,Gráficos,Grafik,Grafika,Grafica,Gráficos,Graphique
+KEY_WINDOW_TYPE,Window Type,Tipo de ventana,Fenstertyp,Typ Okna,Tipo di finestra,Tipo de janela,Type de fenêtre
+KEY_RESOLUTION,Resolution,Resolución,Auflösung,Rozdzielczość,Risoluzione,Resolução,Résolution
+KEY_MUSIC,Music,Música,Musik,Muzyka,Musica,Música,La musique
+KEY_VOLUME,Volume,Volumen,Volumen,Głośność,Volume,Volume,Le volume
+KEY_BACKGROUND,Background,Fondo,Hintergrund,Muzyka z tła,Sfondo,Fundo,Contexte
+KEY_SFX,SFX,SFX,SFX,Efekty,SFX,SFX,SFX
+KEY_OFF,Off,De,Aus,Wył,Via,Fora,De
+KEY_On,On,En,Auf,Wł,Sopra,Em,Sur
+KEY_SAVE,Save,Salvar,Sparen,Zapisz,Salvare,Guardar,Sauvegarder
+KEY_Return,Return,Regreso,Rückkehr,Wróć do gry,Ritorno,Retorna,Revenir
+KEY_Load,Load,Carga,Belastung,Załaduj,Caricare,Carga,Charge
+KEY_Options,Options,Opciones,Optionen,Opcje,Opzioni,Opções,Les options
+KEY_Stats,Stats,Estadísticas,Statistiken,Statystyki,Statistiche,Estatísticos,Statistiques
+KEY_Quit,Quit,Dejar,Verlassen,Wyjdź,Smettere,Sair,Quitter
+KEY_Play,Play,Jugar,Abspielen,Graj,Giocare,Toque,Jouer
+KEY_MODE1,Normal Mode,Modo normal,Normaler Modus,Tryb Normalny,Modalità normale,Modo normal,Mode normal
+KEY_TUT1,"Enter places like this,
+to go to the next levels","Entra en lugares como este,
+Para pasar a los siguientes niveles.","Orte wie diese eingeben,
+Um zu den nächsten Stufen zu gelangen","Wchodź do miejsc takich jak te,
+by dostać się do następnych poziomów","Inserisci posti come questo,
+Per passare ai livelli successivi","Insira lugares como este
+Para ir para os próximos níveis","Entrez dans des endroits comme celui-ci,
+Pour passer aux niveaux suivants"
+KEY_WINDOWED,Windowed,Windowed,Windowed,W oknie,Windowed,Windowed,Venteux
+KEY_MAXIMIZED,Maximized,Maximizado,Maximiert,Maksymalizacja,Massima,Maximizado,Maximisé
+KEY_FULLSCREEN,Fullscreen,Pantalla completa,Vollbildschirm,Pełny Ekran,A schermo intero,Tela cheia,Plein écran
+KEY_PLAY_AWAY,Continue Playing,Sigue jugando,Spielen Sie weiter,Graj dalej,Continua a giocare,Continue jogando,Rejouer
+KEY_EXP,Experience,Experiencia,Erfahrung,Punkty doświadczenia,Esperienza,Experiência,Expérience
+KEY_ENEMIES,Killed Enemies,Enemigos muertos,Getötete Feinde,Pokonani przeciwnicy,Nemici uccisi,Inimigos mortos,Ennemis tués
+KEY_COINS,Coins,Monedas,Münzen,Monety,Monete,Moedas,Pièces de monnaie
+KEY_THANKS,Thanks,Gracias,Vielen Dank,Dzięki,Grazie,Obrigado,Merci
+LANG_EN,English,Inglés,Englisch,Angielski,Inglese,Inglês,Anglais
+LANG_ES,Spanish,Español,Spanisch,Hiszpanski,Spagnolo,Espanhol,Espanol
+LANG_DE,Deutsch,Deutsch,Deutsch,Niemiecki,Tedesco,Deutsch,Deutsch
+LANG_PL,Polish,Polaco,Polieren,Polski,Polacco,Polonês,Polonais
+LANG_IT,Italiano,Italiano,Italiano,Wloski,Italiano,Italiano,Italiano
+LANG_PT,Portuguese,Portugués,Portugiesisch,Portugalski,Portoghese,Português,Portugues
+KEY_LANG,Language,Idioma,Sprache,Jezyk,Linguaggio,Língua,La langue
+KEY_G_A,Graphics & Audio,Gráficos y Audio,Grafik & Audio,Grafika i Audio,Grafica e audio,Gráficos e Áudio,Graphiques et audio
+KEY_CON_TAB,Controls,Controles,Steuerelemente,Sterowanie,Controlli,Controles,Les contrôles
+LANG_FR,French,Francés,Französisch,Francuski,Francese,Francês,Français
+KEY_LOADING,LOADING…,CARGANDO ...,WIRD GELADEN ...,ŁADOWANIE…,CARICAMENTO IN CORSO ...,CARREGANDO ...,CHARGEMENT ...
+,,,,,,,
+KEY_CHAR,Only this character is avaliable now ,Solo este personaje esta disponible ahora,Nur dieser Charakter ist jetzt verfügbar,Tylko ta postać jest teraz dostępna,Solo questo personaggio è disponibile ora,Apenas este personagem está disponível agora,Seul ce personnage est disponible maintenant

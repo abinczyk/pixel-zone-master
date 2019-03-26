@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/Character Select/CharacterManager.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Character Select/CharacterSelect2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 10, 10 )
+
+[sub_resource type="QuadMesh" id=2]
+size = Vector2( 2.5, 5 )
+
+[sub_resource type="CapsuleMesh" id=3]
+
+[node name="Selection" type="Spatial"]
+
+[node name="Floor" type="MeshInstance" parent="."]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, -1.46096, -1.7592 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Roof" type="MeshInstance" parent="."]
+transform = Transform( 5, 0, 0, 0, -4.46424, -0.450357, 0, 2.25179, -0.892848, 0, 6.28465, -1.29365 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Wall_back" type="MeshInstance" parent="."]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, -1.22581, 2.11906, -4.93716 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall_right" type="MeshInstance" parent="."]
+transform = Transform( 1.94448, 0, -0.960644, 0, 5, 0, 6.72451, 0, 0.277782, 4.45609, 2.11906, -4.97923 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Wall_left" type="MeshInstance" parent="."]
+transform = Transform( 2.73512, 0, 0.920505, 0, 5, 0, -6.44353, 0, 0.390731, -4.31921, 2.11906, -4.97923 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CharacterManager" type="Spatial" parent="."]
+script = ExtResource( 1 )
+
+[node name="Control" parent="CharacterManager" instance=ExtResource( 2 )]
+
+[node name="Character1" type="MeshInstance" parent="CharacterManager"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -3, 1, -0.0964289 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Character2" type="MeshInstance" parent="CharacterManager"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 3 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Sprite3D" type="Sprite3D" parent="CharacterManager/Character2"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -1, 0 )
+texture = ExtResource( 3 )
+
+[node name="Character3" type="MeshInstance" parent="CharacterManager"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3, 1, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.999379, 0.0352435, 0, -0.0352435, 0.999379, -0.105486, 1.92504, 7.03268 )
+

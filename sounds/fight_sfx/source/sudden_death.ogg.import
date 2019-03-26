@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sudden_death.ogg-f662cb880839dcf8e440066e5675621d.oggstr"
+
+[deps]
+
+source_file="res://sounds/fight_sfx/source/sudden_death.ogg"
+dest_files=[ "res://.import/sudden_death.ogg-f662cb880839dcf8e440066e5675621d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

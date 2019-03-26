@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/choose_your_character.ogg-163f1cc2bcce478bd95ec1af0a9c269a.oggstr"
+
+[deps]
+
+source_file="res://sounds/fight_sfx/source/choose_your_character.ogg"
+dest_files=[ "res://.import/choose_your_character.ogg-163f1cc2bcce478bd95ec1af0a9c269a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

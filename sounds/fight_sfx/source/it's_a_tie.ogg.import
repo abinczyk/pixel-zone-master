@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/it's_a_tie.ogg-92d035a557d5b5f5e58f74bf99dcfc12.oggstr"
+
+[deps]
+
+source_file="res://sounds/fight_sfx/source/it's_a_tie.ogg"
+dest_files=[ "res://.import/it's_a_tie.ogg-92d035a557d5b5f5e58f74bf99dcfc12.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

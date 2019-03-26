@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_lose.ogg-8a1918bf210699c2b870a8a40f503a8b.oggstr"
+
+[deps]
+
+source_file="res://sounds/voiceover_female/source/you_lose.ogg"
+dest_files=[ "res://.import/you_lose.ogg-8a1918bf210699c2b870a8a40f503a8b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

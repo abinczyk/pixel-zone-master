@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/time_over.ogg-0e8444cabfd4ef2f0ddec69dc8ab16bb.oggstr"
+
+[deps]
+
+source_file="res://sounds/voiceover_male/source/time_over.ogg"
+dest_files=[ "res://.import/time_over.ogg-0e8444cabfd4ef2f0ddec69dc8ab16bb.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

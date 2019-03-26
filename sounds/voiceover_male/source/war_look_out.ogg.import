@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_look_out.ogg-e36fd80ae40c3ff0414b6c725b5e2f68.oggstr"
+
+[deps]
+
+source_file="res://sounds/voiceover_male/source/war_look_out.ogg"
+dest_files=[ "res://.import/war_look_out.ogg-e36fd80ae40c3ff0414b6c725b5e2f68.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_win.ogg-cb4e98fbff29d271c59af1f94c6d9709.oggstr"
+
+[deps]
+
+source_file="res://sounds/fight_sfx/source/you_win.ogg"
+dest_files=[ "res://.import/you_win.ogg-cb4e98fbff29d271c59af1f94c6d9709.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

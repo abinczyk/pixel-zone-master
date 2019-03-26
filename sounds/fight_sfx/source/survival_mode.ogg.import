@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/survival_mode.ogg-1d97f47ef928ce25d1533b8278561a8a.oggstr"
+
+[deps]
+
+source_file="res://sounds/fight_sfx/source/survival_mode.ogg"
+dest_files=[ "res://.import/survival_mode.ogg-1d97f47ef928ce25d1533b8278561a8a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

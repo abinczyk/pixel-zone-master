@@ -1,0 +1,580 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://scripts/scenes/OptionsPage/OptionsPage.gd" type="Script" id=1]
+[ext_resource path="res://themes/theme_test.tres" type="Theme" id=2]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=3]
+[ext_resource path="res://scripts/scenes/OptionsPage/GraphicsBox.gd" type="Script" id=4]
+[ext_resource path="res://scripts/scenes/OptionsPage/WindowBox.gd" type="Script" id=5]
+[ext_resource path="res://scripts/scenes/ResolutionBox.gd" type="Script" id=6]
+[ext_resource path="res://scripts/scenes/OptionsPage/VSyncBox.gd" type="Script" id=7]
+[ext_resource path="res://scripts/scenes/OptionsPage/MusicBox.gd" type="Script" id=8]
+
+[sub_resource type="InputEventAction" id=1]
+action = "ui_accept"
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
+
+[sub_resource type="ButtonGroup" id=3]
+
+[sub_resource type="ButtonGroup" id=4]
+
+[sub_resource type="ButtonGroup" id=5]
+
+[sub_resource type="ButtonGroup" id=6]
+
+[node name="OptionsPage" type="Panel"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+
+[node name="TabContainer" type="TabContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -348.0
+margin_top = 5.0
+margin_right = 376.0
+margin_bottom = 591.0
+
+[node name="Controls" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+theme = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="TabContainer/Controls"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -107.0
+margin_top = -118.5
+margin_right = 107.0
+margin_bottom = 118.5
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_CONTROLS"
+
+[node name="ApplyButton2" type="Button" parent="TabContainer/Controls"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -105.5
+margin_top = -80.0
+margin_right = 105.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+shortcut = SubResource( 2 )
+text = "KEY_APPLY"
+flat = true
+
+[node name="Language" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+theme = ExtResource( 2 )
+
+[node name="ApplyButton3" type="Button" parent="TabContainer/Language"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -88.0
+margin_top = -69.0
+margin_right = 89.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+shortcut = SubResource( 2 )
+text = "KEY_APPLY"
+flat = true
+
+[node name="langs" type="VBoxContainer" parent="TabContainer/Language"]
+margin_left = 177.0
+margin_top = 39.125
+margin_right = 250.0
+margin_bottom = 113.125
+
+[node name="American_langs" type="Button" parent="TabContainer/Language/langs"]
+margin_right = 73.0
+margin_bottom = 22.0
+text = "American"
+
+[node name="Europe_langs" type="Button" parent="TabContainer/Language/langs"]
+margin_top = 26.0
+margin_right = 73.0
+margin_bottom = 48.0
+text = "Europe"
+
+[node name="Europe" type="VBoxContainer" parent="TabContainer/Language"]
+editor/display_folded = true
+visible = false
+margin_left = 263.75
+margin_top = 39.1251
+margin_right = 367.75
+margin_bottom = 349.125
+
+[node name="Englisch" type="Button" parent="TabContainer/Language/Europe"]
+margin_right = 104.0
+margin_bottom = 22.0
+text = "LANG_EN"
+
+[node name="Portuguese" type="Button" parent="TabContainer/Language/Europe"]
+margin_top = 26.0
+margin_right = 104.0
+margin_bottom = 48.0
+text = "LANG_PT"
+
+[node name="French" type="Button" parent="TabContainer/Language/Europe"]
+margin_top = 52.0
+margin_right = 104.0
+margin_bottom = 74.0
+text = "LANG_FR"
+
+[node name="Polisch" type="Button" parent="TabContainer/Language/Europe"]
+margin_top = 78.0
+margin_right = 104.0
+margin_bottom = 100.0
+text = "LANG_PL"
+
+[node name="Detusch" type="Button" parent="TabContainer/Language/Europe"]
+margin_top = 104.0
+margin_right = 104.0
+margin_bottom = 126.0
+text = "LANG_DE"
+
+[node name="Italiano" type="Button" parent="TabContainer/Language/Europe"]
+margin_top = 130.0
+margin_right = 104.0
+margin_bottom = 152.0
+text = "LANG_IT"
+
+[node name="Spanisch" type="Button" parent="TabContainer/Language/Europe"]
+margin_top = 156.0
+margin_right = 104.0
+margin_bottom = 178.0
+text = "LANG_ES"
+
+[node name="American" type="VBoxContainer" parent="TabContainer/Language"]
+margin_left = 263.75
+margin_top = 39.125
+margin_right = 367.75
+margin_bottom = 349.125
+
+[node name="USA" type="Button" parent="TabContainer/Language/American"]
+margin_right = 104.0
+margin_bottom = 22.0
+text = "LANG_EN"
+
+[node name="Graphics & Audio" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+theme = ExtResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Graphics & Audio"]
+margin_left = 97.0
+margin_top = 8.0
+margin_right = 639.0
+margin_bottom = 554.0
+
+[node name="GraphicsBox" type="VBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer"]
+margin_right = 331.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox"]
+margin_right = 331.0
+margin_bottom = 106.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_GRAPHICS"
+align = 1
+valign = 1
+
+[node name="WindowBox" type="VBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox"]
+margin_top = 110.0
+margin_right = 331.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/WindowBox"]
+margin_right = 331.0
+margin_bottom = 51.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_WINDOW_TYPE"
+align = 1
+valign = 1
+
+[node name="HBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/WindowBox"]
+editor/display_folded = true
+margin_top = 55.0
+margin_right = 331.0
+margin_bottom = 106.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PrevButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/WindowBox/HBox"]
+margin_right = 25.0
+margin_bottom = 51.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+text = "<"
+flat = true
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/WindowBox/HBox"]
+margin_left = 29.0
+margin_right = 302.0
+margin_bottom = 51.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "Window Type"
+align = 1
+valign = 1
+
+[node name="NextButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/WindowBox/HBox"]
+margin_left = 306.0
+margin_right = 331.0
+margin_bottom = 51.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+text = ">"
+flat = true
+
+[node name="ResolutionBox" type="VBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox"]
+margin_top = 220.0
+margin_right = 331.0
+margin_bottom = 326.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ResolutionBox"]
+margin_right = 331.0
+margin_bottom = 51.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_RESOLUTION"
+align = 1
+valign = 1
+
+[node name="HBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ResolutionBox"]
+editor/display_folded = true
+margin_top = 55.0
+margin_right = 331.0
+margin_bottom = 106.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PrevButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ResolutionBox/HBox"]
+margin_right = 25.0
+margin_bottom = 51.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+text = "<"
+flat = true
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ResolutionBox/HBox"]
+margin_left = 29.0
+margin_right = 302.0
+margin_bottom = 51.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "Resolution"
+align = 1
+valign = 1
+
+[node name="NextButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ResolutionBox/HBox"]
+margin_left = 306.0
+margin_right = 331.0
+margin_bottom = 51.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+text = ">"
+flat = true
+
+[node name="VSyncBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox"]
+editor/display_folded = true
+margin_top = 330.0
+margin_right = 331.0
+margin_bottom = 436.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/VSyncBox"]
+margin_right = 85.0
+margin_bottom = 106.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "VSync"
+align = 1
+valign = 1
+
+[node name="OffButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/VSyncBox"]
+margin_left = 89.0
+margin_right = 216.0
+margin_bottom = 106.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 3 )
+text = "KEY_OFF"
+flat = true
+
+[node name="OnButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/VSyncBox"]
+margin_left = 220.0
+margin_right = 331.0
+margin_bottom = 106.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 3 )
+text = "KEY_On"
+flat = true
+
+[node name="ApplyButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox"]
+margin_top = 440.0
+margin_right = 331.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+shortcut = SubResource( 2 )
+text = "KEY_APPLY"
+flat = true
+
+[node name="MusicBox" type="VBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer"]
+editor/display_folded = true
+margin_left = 335.0
+margin_right = 592.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+margin_right = 257.0
+margin_bottom = 74.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_MUSIC"
+align = 1
+valign = 1
+
+[node name="VolumeBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+editor/display_folded = true
+margin_top = 78.0
+margin_right = 257.0
+margin_bottom = 152.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/VolumeBox"]
+margin_right = 257.0
+margin_bottom = 74.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_VOLUME"
+align = 1
+valign = 1
+
+[node name="OffButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/VolumeBox"]
+visible = false
+margin_left = 127.0
+margin_right = 250.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+group = SubResource( 4 )
+text = "Muted"
+flat = true
+
+[node name="OnButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/VolumeBox"]
+visible = false
+margin_left = 193.0
+margin_right = 382.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+group = SubResource( 4 )
+text = "Unmuted"
+flat = true
+
+[node name="VolumeBar" type="HSlider" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+margin_top = 156.0
+margin_right = 257.0
+margin_bottom = 230.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+min_value = -60.0
+max_value = 12.0
+rounded = true
+
+[node name="MusicBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+editor/display_folded = true
+margin_top = 234.0
+margin_right = 257.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 5
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/MusicBox"]
+margin_right = 257.0
+margin_bottom = 74.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_BACKGROUND"
+align = 1
+valign = 1
+
+[node name="OffButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/MusicBox"]
+visible = false
+margin_left = 157.0
+margin_right = 250.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+group = SubResource( 5 )
+text = "Muted"
+flat = true
+
+[node name="OnButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/MusicBox"]
+visible = false
+margin_left = 193.0
+margin_right = 382.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+group = SubResource( 5 )
+text = "Unmuted"
+flat = true
+
+[node name="MusicBar" type="HSlider" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+margin_top = 312.0
+margin_right = 257.0
+margin_bottom = 386.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+min_value = -60.0
+max_value = 12.0
+rounded = true
+ticks_on_borders = true
+
+[node name="SFXBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+editor/display_folded = true
+margin_top = 390.0
+margin_right = 257.0
+margin_bottom = 464.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/SFXBox"]
+margin_right = 257.0
+margin_bottom = 74.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_SFX"
+align = 1
+valign = 1
+
+[node name="OffButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/SFXBox"]
+visible = false
+margin_left = 127.0
+margin_right = 250.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+group = SubResource( 6 )
+text = "Muted"
+flat = true
+
+[node name="OnButton" type="Button" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox/SFXBox"]
+visible = false
+margin_left = 193.0
+margin_right = 382.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+group = SubResource( 6 )
+text = "Unmuted"
+flat = true
+
+[node name="SFXBar" type="HSlider" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
+margin_top = 468.0
+margin_right = 257.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+min_value = -60.0
+max_value = 12.0
+rounded = true
+ticks_on_borders = true
+
+[connection signal="pressed" from="TabContainer/Controls/ApplyButton2" to="." method="_on_ApplyButton_pressed"]
+[connection signal="pressed" from="TabContainer/Language/ApplyButton3" to="." method="_on_ApplyButton_pressed"]
+[connection signal="pressed" from="TabContainer/Language/langs/American_langs" to="." method="_on_American_langs_pressed"]
+[connection signal="pressed" from="TabContainer/Language/langs/Europe_langs" to="." method="_on_Europe_langs_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/Englisch" to="." method="_on_Englisch_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/Portuguese" to="." method="_on_Portuguese_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/French" to="." method="_on_French_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/Polisch" to="." method="_on_Polisch_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/Detusch" to="." method="_on_Detusch_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/Italiano" to="." method="_on_Italiano_pressed"]
+[connection signal="pressed" from="TabContainer/Language/Europe/Spanisch" to="." method="_on_Spanisch_pressed"]
+[connection signal="pressed" from="TabContainer/Language/American/USA" to="." method="_on_USA_pressed"]
+[connection signal="pressed" from="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ApplyButton" to="." method="_on_ApplyButton_pressed"]

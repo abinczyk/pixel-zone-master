@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_lose.ogg-aa105bb34e43eada6797bffe77470b5e.oggstr"
+
+[deps]
+
+source_file="res://sounds/voiceover_male/source/you_lose.ogg"
+dest_files=[ "res://.import/you_lose.ogg-aa105bb34e43eada6797bffe77470b5e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

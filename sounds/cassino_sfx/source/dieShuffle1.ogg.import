@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dieShuffle1.ogg-475ff8198326eef174de70a5496bb45f.oggstr"
+
+[deps]
+
+source_file="res://sounds/cassino_sfx/source/dieShuffle1.ogg"
+dest_files=[ "res://.import/dieShuffle1.ogg-475ff8198326eef174de70a5496bb45f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

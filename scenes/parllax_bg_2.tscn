@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://textures/backgrounds/hubbg3.png" type="Texture" id=1]
+[ext_resource path="res://textures/backgrounds/hubbg2.png" type="Texture" id=2]
+[ext_resource path="res://textures/backgrounds/hubbg1.png" type="Texture" id=3]
+
+[node name="parallax_bg" type="ParallaxBackground"]
+scroll_base_scale = Vector2( 0.7, 0 )
+
+[node name="sky" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 1 )
+motion_mirroring = Vector2( 1000, 0 )
+
+[node name="Sprite" type="Sprite" parent="sky"]
+position = Vector2( -2.53137, 4.31436 )
+scale = Vector2( 2.12012, 2.567 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="mount_ 2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.9, 1 )
+motion_mirroring = Vector2( 1000, 0 )
+
+[node name="Sprite" type="Sprite" parent="mount_ 2"]
+position = Vector2( 0, 267.311 )
+scale = Vector2( 1.54106, 1.27686 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 800, 256 )
+
+[node name="mount_1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1.2, 1 )
+motion_mirroring = Vector2( 1000, 0 )
+
+[node name="Sprite" type="Sprite" parent="mount_1"]
+position = Vector2( 207.563, 347.281 )
+scale = Vector2( 1.43664, 1.2373 )
+texture = ExtResource( 3 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 800, 256 )
+
