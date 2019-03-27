@@ -15,3 +15,8 @@ func _on_Select_pressed():
 		get_node("CharacterSelector/ErrorMessage").text == ""
 		current_player = 0
 		emit_signal("current_player")
+
+func _on_Multiplayer_pressed():
+	$TextureRect/lobby.show()
+	$TextureRect/VBoxContainer/Play.disabled = true
+	$TextureRect/VBoxContainer/Multiplayer.disabled = true
