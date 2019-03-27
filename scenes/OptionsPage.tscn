@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/scenes/OptionsPage/OptionsPage.gd" type="Script" id=1]
 [ext_resource path="res://themes/theme_test.tres" type="Theme" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scripts/scenes/ResolutionBox.gd" type="Script" id=6]
 [ext_resource path="res://scripts/scenes/OptionsPage/VSyncBox.gd" type="Script" id=7]
 [ext_resource path="res://scripts/scenes/OptionsPage/MusicBox.gd" type="Script" id=8]
+[ext_resource path="res://scenes/controller-input-test/joypads.tscn" type="PackedScene" id=9]
 
 [sub_resource type="InputEventAction" id=1]
 action = "ui_accept"
@@ -40,6 +41,7 @@ margin_right = 376.0
 margin_bottom = 591.0
 
 [node name="Controls" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -77,6 +79,7 @@ text = "KEY_APPLY"
 flat = true
 
 [node name="Language" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -564,6 +567,17 @@ min_value = -60.0
 max_value = 12.0
 rounded = true
 ticks_on_borders = true
+
+[node name="Controller Test" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="joypads" parent="TabContainer/Controller Test" instance=ExtResource( 9 )]
 
 [connection signal="pressed" from="TabContainer/Controls/ApplyButton2" to="." method="_on_ApplyButton_pressed"]
 [connection signal="pressed" from="TabContainer/Language/ApplyButton3" to="." method="_on_ApplyButton_pressed"]

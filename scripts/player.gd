@@ -17,7 +17,6 @@ var default_weapon = preload("res://scenes/bullet.tscn").instance()
 var weapon_current = default_weapon
 var weapon_up = preload("res://scenes/bullet_modified.tscn").instance()
 var anim=""
-#cache the sprite here for fast access (we will set scale to flip it often)
 onready var sprite = $sprite
 func _physics_process(delta):
 	get_node("ui/Coins_points").set_text(str(get_node("/root/game_state").points))

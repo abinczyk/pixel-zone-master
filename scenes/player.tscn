@@ -333,4 +333,10 @@ Start!
 [node name="bullet" parent="ui" instance=ExtResource( 16 )]
 position = Vector2( 135, -63.0001 )
 
+[node name="Label" type="Label" parent="."]
+margin_left = -20.25
+margin_top = -40.5
+margin_right = 19.75
+margin_bottom = -26.5
+
 [connection signal="area_entered" from="Area2D2" to="." method="_on_Area2D2_area_entered"]

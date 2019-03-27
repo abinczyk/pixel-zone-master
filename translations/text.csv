@@ -73,5 +73,23 @@ KEY_G_A,Graphics & Audio,Gráficos y Audio,Grafik & Audio,Grafika i Audio,Grafic
 KEY_CON_TAB,Controls,Controles,Steuerelemente,Sterowanie,Controlli,Controles,Les contrôles
 LANG_FR,French,Francés,Französisch,Francuski,Francese,Francês,Français
 KEY_LOADING,LOADING…,CARGANDO ...,WIRD GELADEN ...,ŁADOWANIE…,CARICAMENTO IN CORSO ...,CARREGANDO ...,CHARGEMENT ...
-,,,,,,,
+KEY_CONTROLLER,Check controller settings,Verifique la configuración del controlador,Überprüfen Sie die Controller-Einstellungen,Sprawdz ustawienia kontrolera,Controlla le impostazioni del controller,Verifique as configurações do controlador,Vérifier les paramètres du contrôleur
 KEY_CHAR,Only this character is avaliable now ,Solo este personaje esta disponible ahora,Nur dieser Charakter ist jetzt verfügbar,Tylko ta postać jest teraz dostępna,Solo questo personaggio è disponibile ora,Apenas este personagem está disponível agora,Seul ce personnage est disponible maintenant
+KEY_DEVICE,Device,Dispositivo,Gerät,Urzadzenie,Dispositivo,Dispositivo,Dispositif
+KEY_Axis0,Axis 0,Eje 0,Achse 0,Os 0,Asse 0,Eixo 0,Axe 0
+KEY_Axis1,Axis 1,Eje 1,Achse 1,Os 1,Asse 1,Eixo 1,Axe 1
+KEY_Axis2,Axis 2,Eje 2,Achse 2,Os 2,Asse 2,Eixo 2,Axe 2
+KEY_Axis3,Axis 3,Eje 3,Achse 3,Os 3,Asse 3,Eixo 3,Axe 3
+KEY_Axis4,Axis 4,Eje 4,Achse 4,Os 4,Asse 4,Eixo 4,Axe 4
+KEY_Axis5,Axis 5,Eje 5,Achse 5,Os 5,Asse 5,Eixo 5,Axe 5
+KEY_Axis6,Axis 6,Eje 6,Achse 6,Os 6,Asse 6,Eixo 6,Axe 6
+KEY_Axis7,Axis 7,Eje 7,Achse 7,Os 7,Asse 7,Eixo 7,Axe 7
+KEY_Axis8,Axis 8,Eje 8,Achse 8,Os 8,Asse 8,Eixo 8,Axe 8
+KEY_Axis9,Axis 9,Eje 9,Achse 9,Os 9,Asse 9,Eixo 9,Axe 9
+KEY_Axis10,Axis 10,Eje 10,Achse 10,Os 10,Asse 10,Eixo 10,Axe 10
+KEY_Buttons,Buttons:,Botones:,Tasten:,Przyciski:,Pulsanti:,Botões:,Boutons:
+KEY_WIB_1,Vibration Weak Motor,Motor de vibración débil,Vibrationsschwacher Motor,Wibracja slabego silnika,Motore debole di vibrazione,Motor fraco de vibração,Moteur faible vibration
+KEY_WIB_2,Vibration Strong Motor,Motor fuerte vibracion,Vibrationsstarker Motor,Wibracja silnego silnika,Vibrazione forte motore,Motor forte de vibração,Moteur puissant de vibration
+KEY_WIB_3,Vibration Duration,Duración de la vibración,Vibrationsdauer,Dlugosc wibracji,Durata delle vibrazioni,Duração da vibração,Durée de vibration
+KEY_WIB_START,Start Vibration,Iniciar vibración,Vibration starten,Rozpocznij wibracje,Inizia la vibrazione,Comece a vibração,Démarrer les vibrations
+KEY_WIB_STOP,Stop Vibration,Detener la vibración,Vibrationsstopp,Zatrzymaj wibracje,Fermare le vibrazioni,Pare a vibração,Arrêter les vibrations

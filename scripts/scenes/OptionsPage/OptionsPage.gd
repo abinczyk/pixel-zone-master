@@ -4,6 +4,7 @@ func _process(delta):
 	tab_container.set_tab_title(0, "KEY_CON_TAB")
 	tab_container.set_tab_title(1, "KEY_LANG")
 	tab_container.set_tab_title(2, "KEY_G_A")
+	tab_container.set_tab_title(3, "KEY_CONTROLLER")
 
 func _on_ApplyButton_pressed():
 	hide()

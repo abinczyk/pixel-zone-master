@@ -77,9 +77,9 @@ custom_constants/separation = 40
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CharacterSelector"]
-margin_top = 165.0
+margin_top = 106.0
 margin_right = 510.0
-margin_bottom = 265.0
+margin_bottom = 206.0
 custom_constants/separation = 30
 alignment = 1
 
@@ -111,15 +111,29 @@ expand = true
 stretch_mode = 5
 
 [node name="Select" type="TextureButton" parent="CharacterSelector"]
-margin_top = 305.0
+margin_top = 246.0
 margin_right = 510.0
-margin_bottom = 433.0
+margin_bottom = 374.0
 rect_min_size = Vector2( 256, 128 )
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 11 )
 expand = true
 stretch_mode = 5
 
+[node name="LineEdit" type="LineEdit" parent="CharacterSelector"]
+margin_top = 414.0
+margin_right = 510.0
+margin_bottom = 438.0
+placeholder_text = "Enter Player's name"
+
+[node name="ErrorMessage" type="Label" parent="CharacterSelector"]
+margin_top = 478.0
+margin_right = 510.0
+margin_bottom = 492.0
+
 [connection signal="pressed" from="TextureRect/VBoxContainer/Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
 [connection signal="pressed" from="CharacterSelector/HBoxContainer/Previous" to="." method="_on_Previous_pressed"]
+[connection signal="pressed" from="CharacterSelector/Select" to="." method="_on_Select_pressed"]
+[connection signal="ready" from="CharacterSelector/Select" to="." method="_on_Select_ready"]
+[connection signal="text_entered" from="CharacterSelector/LineEdit" to="." method="_on_LineEdit_text_entered"]
