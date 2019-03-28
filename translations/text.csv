@@ -72,7 +72,7 @@ KEY_LANG,Language,Idioma,Sprache,Jezyk,Linguaggio,Língua,La langue
 KEY_G_A,Graphics & Audio,Gráficos y Audio,Grafik & Audio,Grafika i Audio,Grafica e audio,Gráficos e Áudio,Graphiques et audio
 KEY_CON_TAB,Controls,Controles,Steuerelemente,Sterowanie,Controlli,Controles,Les contrôles
 LANG_FR,French,Francés,Französisch,Francuski,Francese,Francês,Français
-KEY_LOADING,LOADING…,CARGANDO ...,WIRD GELADEN ...,ŁADOWANIE…,CARICAMENTO IN CORSO ...,CARREGANDO ...,CHARGEMENT ...
+KEY_LOADING,LOADING…,CARGANDO ...,WIRD GELADEN ...,LADOWANIE…,CARICAMENTO IN CORSO ...,CARREGANDO ...,CHARGEMENT ...
 KEY_CONTROLLER,Check controller settings,Verifique la configuración del controlador,Überprüfen Sie die Controller-Einstellungen,Sprawdz ustawienia kontrolera,Controlla le impostazioni del controller,Verifique as configurações do controlador,Vérifier les paramètres du contrôleur
 KEY_CHAR,Only this character is avaliable now ,Solo este personaje esta disponible ahora,Nur dieser Charakter ist jetzt verfügbar,Tylko ta postać jest teraz dostępna,Solo questo personaggio è disponibile ora,Apenas este personagem está disponível agora,Seul ce personnage est disponible maintenant
 KEY_DEVICE,Device,Dispositivo,Gerät,Urzadzenie,Dispositivo,Dispositivo,Dispositif
@@ -93,3 +93,39 @@ KEY_WIB_2,Vibration Strong Motor,Motor fuerte vibracion,Vibrationsstarker Motor,
 KEY_WIB_3,Vibration Duration,Duración de la vibración,Vibrationsdauer,Dlugosc wibracji,Durata delle vibrazioni,Duração da vibração,Durée de vibration
 KEY_WIB_START,Start Vibration,Iniciar vibración,Vibration starten,Rozpocznij wibracje,Inizia la vibrazione,Comece a vibração,Démarrer les vibrations
 KEY_WIB_STOP,Stop Vibration,Detener la vibración,Vibrationsstopp,Zatrzymaj wibracje,Fermare le vibrazioni,Pare a vibração,Arrêter les vibrations
+KEY_INFO,"To enter the Multiplayer mode, an internet connection is required. How to configure multiplayer mode? It's easy:
+
+1. If you want to be a server administrator*, you must enter its IP address. It is necessary for other players who want to play on your server to play on it, not on another server.
+2. Your nickname.Your nickname is displayed above your character.
+
+*THINK ABOUT THIS DECISION BECAUSE THE SERVER ADMINISTRATOR IS ONLY CAN START IT !!!","Para entrar en el modo multijugador, se requiere una conexión a internet. ¿Cómo configurar el modo multijugador? Es fácil:
+
+1. Si desea ser un administrador del servidor *, debe ingresar su dirección IP. Es necesario que otros jugadores que quieran jugar en su servidor jueguen en él, no en otro servidor.
+2. Tu apodo. Tu apodo se muestra sobre tu personaje. 
+
+* ¡PIENSE EN ESTA DECISIÓN PORQUE EL ADMINISTRADOR DEL SERVIDOR ES SOLO PUEDE INICIARLO!","Um in den Multiplayer-Modus zu gelangen, ist eine Internetverbindung erforderlich. Wie konfiguriere ich den Multiplayer-Modus? Es ist einfach:
+
+1. Wenn Sie Serveradministrator * sein möchten, müssen Sie seine IP-Adresse eingeben. Andere Spieler, die auf Ihrem Server spielen möchten, müssen darauf spielen, nicht auf einem anderen Server.
+2. Dein Nickname. Dein Nickname wird über deinem Charakter angezeigt.
+
+* ÜBER DIESE ENTSCHEIDUNG DENKEN, WEIL DER SERVER-ADMINISTRATOR NUR ES STARTEN KANN !!!","Aby wejść w tryb wieloosobowy, wymagane jest połączenie internetowe. Jak skonfigurować tryb dla wielu graczy? To łatwe:
+
+1. Jeśli chcesz być administratorem serwera *, musisz wprowadzić jego adres IP. Jest to konieczne dla innych graczy, którzy chcą grać na twoim serwerze, aby grać na nim, a nie na innym serwerze.
+2. Twój pseudonim. Twój pseudonim jest wyświetlany nad Twoją postacią.
+
+* ZASTANOW SIE NAD TA DECYZJA, PONIEWAŻ TYLKO ADMINISTRATOR SERWERA MOZE GO URUCHOMIC!!!","Per accedere alla modalità multigiocatore, è necessaria una connessione internet. Come configurare la modalità multiplayer? È facile:
+
+1. Se vuoi essere un amministratore del server *, devi inserire il suo indirizzo IP. È necessario per gli altri giocatori che vogliono giocare sul tuo server per giocare su di esso, non su un altro server.
+2. Il tuo nickname. Il tuo nickname è visualizzato sopra il tuo personaggio. 
+
+* PENSA A QUESTA DECISIONE PERCHÉ IL SERVER AMMINISTRATORE PUO 'INIZIARE SOLO !!!","Para entrar no modo Multiplayer, é necessária uma conexão com a internet. Como configurar o modo multiplayer? É fácil:
+
+1. Se você deseja ser um administrador do servidor *, você deve inserir seu endereço IP. É necessário que outros jogadores que querem jogar no seu servidor joguem nele, não em outro servidor.
+2. Seu apelido. Seu apelido é exibido acima do seu personagem.
+
+*PENSE NESTA DECISÃO PORQUE O ADMINISTRADOR DE SERVIDOR SÓ PODE COMEÇÁ-LO !!!","Pour entrer en mode multijoueur, une connexion Internet est requise. Comment configurer le mode multijoueur? C'est facile: 
+
+1. Si vous souhaitez être administrateur de serveur *, vous devez entrer son adresse IP. Il est nécessaire que les autres joueurs souhaitant jouer sur votre serveur y jouent, et non sur un autre serveur.
+2. Votre pseudo. Votre pseudo est affiché au dessus de votre personnage.
+
+* PENSEZ À CETTE DÉCISION PARCE QUE L’ADMINISTRATEUR DE SERVEUR NE PEUT LE COMMENCER !!!"

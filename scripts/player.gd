@@ -119,3 +119,5 @@ func _on_Area2D2_area_entered(area):
 		$ui/ProgressBar.value -= 3
 	if area.name == "bossarea":
 		$ui/ProgressBar.value -= 3
+func set_player_name(new_name):
+	get_node("label").set_text(new_name)

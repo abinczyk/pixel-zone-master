@@ -17,6 +17,4 @@ func _on_Select_pressed():
 		emit_signal("current_player")
 
 func _on_Multiplayer_pressed():
-	$TextureRect/lobby.show()
-	$TextureRect/VBoxContainer/Play.disabled = true
-	$TextureRect/VBoxContainer/Multiplayer.disabled = true
+	get_tree().change_scene("res://multiplayer-bomber/lobby.tscn")

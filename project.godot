@@ -36,7 +36,7 @@ killed_enemies="*res://scripts/scenes/StatsScene/killed_enemies.gd"
 background_load="*res://scenes/background_load.tscn"
 sprite="*res://sprite.tscn"
 screenshot="*res://scripts/screenshot.gd"
-gamestate="*res://example/gamestate.gd"
+gamestate="*res://multiplayer-bomber/gamestate.gd"
 
 [debug]
 
