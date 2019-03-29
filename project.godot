@@ -128,6 +128,11 @@ translation_remaps={
 }
 locale_filter=[ 1, [ "ar", "en", "es", "ms", "pl_PL" ] ]
 
+[network]
+
+limits/packet_peer_stream/max_buffer_po2=64
+remote_fs/page_size=65538
+
 [rendering]
 
 quality/driver/driver_name="GLES2"

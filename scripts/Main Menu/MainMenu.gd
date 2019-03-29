@@ -18,3 +18,5 @@ func _on_Select_pressed():
 
 func _on_Multiplayer_pressed():
 	get_tree().change_scene("res://multiplayer-bomber/lobby.tscn")
+var output = []
+

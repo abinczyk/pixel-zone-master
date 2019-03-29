@@ -5,7 +5,7 @@ func _process(delta):
 	tab_container.set_tab_title(1, "KEY_LANG")
 	tab_container.set_tab_title(2, "KEY_G_A")
 	tab_container.set_tab_title(3, "KEY_CONTROLLER")
-
+	$TabContainer/Info/Label.set_text("Current Video Driver" + str(OS.get_current_video_driver(), "Locale" + str(OS.get_locale()), "Time Zone" + str(OS.get_time_zone_info()), "Name" + str(OS.get_name())))
 func _on_ApplyButton_pressed():
 	hide()
 
@@ -39,3 +39,5 @@ func _on_American_langs_pressed():
 
 func _on_USA_pressed():
 	TranslationServer.set_locale("en")
+
+

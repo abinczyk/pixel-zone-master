@@ -265,6 +265,8 @@ size_flags_vertical = 0
 text = "This is a simple demo on how to make a platformer game with Godot.\"This version uses physics and the 2D physics engine for motion and collision.\"\"The demo also shows the benefits of using the scene system, where coins,\"enemies and the player are edited separatedly and instanced in the stage.\"\"To edit the base tiles for the  tileset, open the tileset_edit.tscn file and follow \"instructions.\""
 autowrap = true
 
+[node name="players" type="Node2D" parent="."]
+
 [node name="spawn_points" type="Node2D" parent="."]
 
 [node name="0" type="Position2D" parent="spawn_points"]
@@ -272,8 +274,6 @@ position = Vector2( 151.875, 567 )
 
 [node name="1" type="Position2D" parent="spawn_points"]
 position = Vector2( 278.438, 572.062 )
-
-[node name="players" type="Node2D" parent="."]
 
 [node name="score" type="HBoxContainer" parent="."]
 margin_right = 2247.0

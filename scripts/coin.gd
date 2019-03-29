@@ -3,10 +3,15 @@ extends Area2D
 var taken=false
 
 func _on_coin_body_enter( body ):
-	get_node("/root/game_state").points += 1
-	get_node("/root/game_experience").points += 1
-	$anim.play("taken")
-	taken = true
+    if body.name == "player":
+        get_node("/root/game_state").points += 1
+        get_node("/root/game_experience").points += 1
+        $anim.play("taken")
+        taken = true
+	
+	
+
+	
    
 func save():
     var save_dict = {

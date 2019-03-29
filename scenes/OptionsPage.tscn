@@ -42,6 +42,7 @@ margin_bottom = 591.0
 
 [node name="Controls" type="Tabs" parent="TabContainer"]
 editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -578,6 +579,18 @@ margin_right = -4.0
 margin_bottom = -4.0
 
 [node name="joypads" parent="TabContainer/Controller Test" instance=ExtResource( 9 )]
+
+[node name="Info" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Label" type="Label" parent="TabContainer/Info"]
+margin_right = 40.0
+margin_bottom = 14.0
 
 [connection signal="pressed" from="TabContainer/Controls/ApplyButton2" to="." method="_on_ApplyButton_pressed"]
 [connection signal="pressed" from="TabContainer/Language/ApplyButton3" to="." method="_on_ApplyButton_pressed"]
