@@ -1,5 +1,5 @@
 extends KinematicBody2D
-signal achieve2
+
 const GRAVITY_VEC = Vector2(0, 900)
 const FLOOR_NORMAL = Vector2(0, -1)
 const SLOPE_SLIDE_STOP = 25.0
@@ -129,7 +129,7 @@ func _on_Area2D2_area_entered(area):
 
 func _on_stage2_normal_achieve1():
     $anim.play("achievement")
-    get_node("ui/GameUI/UIScaler/Menu/OptionsPage/TabContainer/Achievements/Achievement1").show()
+    $ui/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("Reach Level 2")
 
 
 func _on_Timer_timeout():
@@ -137,3 +137,4 @@ func _on_Timer_timeout():
     
 func set_player_name(new_name):
 	get_node("label").set_text(new_name)
+

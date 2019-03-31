@@ -104,3 +104,6 @@ func _on_Load_pressed():
 
 func _on_ConfirmationDialog_confirmed():
 	get_tree().quit()
+
+func _on_Achievements_pressed():
+    $AchievementsPage.show()

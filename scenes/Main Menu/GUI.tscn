@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/Main Menu/MainMenu.gd" type="Script" id=1]
-[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=2]
-[ext_resource path="res://textures/Main Menu/panel.png" type="Texture" id=3]
-[ext_resource path="res://themes/theme_test.tres" type="Theme" id=4]
+[ext_resource path="res://textures/Main Menu/panel.png" type="Texture" id=2]
+[ext_resource path="res://themes/theme_test.tres" type="Theme" id=3]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=4]
 [ext_resource path="res://icon.png" type="Texture" id=5]
 [ext_resource path="res://textures/Main Menu/left.png" type="Texture" id=6]
 [ext_resource path="res://textures/Main Menu/left_pressed.png" type="Texture" id=7]
@@ -19,23 +19,13 @@ margin_top = 4.5
 margin_bottom = 4.5
 script = ExtResource( 1 )
 
-[node name="RichTextLabel" type="Label" parent="."]
-margin_left = 514.0
-margin_top = 55.0
-margin_right = 1024.0
-margin_bottom = 139.0
-custom_fonts/font = ExtResource( 2 )
-text = "KEY_CHAR"
-align = 1
-valign = 1
-
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_top = -299.0
-margin_right = 512.0
+margin_right = 1018.0
 margin_bottom = 292.0
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 expand = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
@@ -51,27 +41,39 @@ margin_bottom = 36.0
 [node name="Play" type="Button" parent="TextureRect/VBoxContainer"]
 margin_right = 333.0
 margin_bottom = 34.0
-theme = ExtResource( 4 )
-custom_fonts/font = ExtResource( 2 )
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 text = "KEY_Play"
 
 [node name="Multiplayer" type="Button" parent="TextureRect/VBoxContainer"]
 margin_top = 38.0
 margin_right = 333.0
 margin_bottom = 72.0
-theme = ExtResource( 4 )
-custom_fonts/font = ExtResource( 2 )
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 text = "KEY_MULTI"
 
 [node name="Quit" type="Button" parent="TextureRect/VBoxContainer"]
 margin_top = 76.0
 margin_right = 333.0
 margin_bottom = 110.0
-theme = ExtResource( 4 )
-custom_fonts/font = ExtResource( 2 )
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 text = "KEY_Quit"
 
+[node name="RichTextLabel" type="Label" parent="."]
+visible = false
+margin_left = 514.0
+margin_top = 55.0
+margin_right = 1024.0
+margin_bottom = 139.0
+custom_fonts/font = ExtResource( 4 )
+text = "KEY_CHAR"
+align = 1
+valign = 1
+
 [node name="CharacterSelector" type="Control" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0

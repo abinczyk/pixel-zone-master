@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/GameUI.gd" type="Script" id=1]
 [ext_resource path="res://scripts/LevelViewport.gd" type="Script" id=2]
@@ -8,7 +8,8 @@
 [ext_resource path="res://scenes/OptionsPage.tscn" type="PackedScene" id=6]
 [ext_resource path="res://themes/theme_test.tres" type="Theme" id=7]
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=8]
-[ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=9]
+[ext_resource path="res://scenes/Achievements.tscn" type="PackedScene" id=9]
+[ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=10]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
@@ -111,7 +112,7 @@ __meta__ = {
 
 [node name="Save" type="Button" parent="UIScaler/Menu/HBoxContainer"]
 margin_right = 248.0
-margin_bottom = 84.0
+margin_bottom = 71.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 8 )
@@ -120,9 +121,9 @@ text = "KEY_SAVE"
 flat = true
 
 [node name="Return" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 88.0
+margin_top = 75.0
 margin_right = 248.0
-margin_bottom = 172.0
+margin_bottom = 146.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 8 )
@@ -131,9 +132,9 @@ text = "KEY_Return"
 flat = true
 
 [node name="Load" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 176.0
+margin_top = 150.0
 margin_right = 248.0
-margin_bottom = 260.0
+margin_bottom = 221.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 8 )
@@ -144,9 +145,9 @@ text = "KEY_Load"
 flat = true
 
 [node name="Options" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 264.0
+margin_top = 225.0
 margin_right = 248.0
-margin_bottom = 348.0
+margin_bottom = 296.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 8 )
@@ -157,9 +158,9 @@ text = "KEY_Options"
 flat = true
 
 [node name="Stats" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 352.0
+margin_top = 300.0
 margin_right = 248.0
-margin_bottom = 436.0
+margin_bottom = 371.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 8 )
@@ -170,9 +171,9 @@ text = "KEY_Stats"
 flat = true
 
 [node name="Quit" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 440.0
+margin_top = 375.0
 margin_right = 248.0
-margin_bottom = 525.0
+margin_bottom = 446.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 8 )
@@ -182,10 +183,30 @@ group = SubResource( 2 )
 text = "KEY_Quit"
 flat = true
 
+[node name="Achievements" type="Button" parent="UIScaler/Menu/HBoxContainer"]
+margin_top = 450.0
+margin_right = 248.0
+margin_bottom = 525.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
+toggle_mode = true
+group = SubResource( 2 )
+text = "Achievements"
+flat = true
+
+[node name="AchievementsPage" parent="UIScaler/Menu" instance=ExtResource( 9 )]
+visible = false
+margin_left = 407.25
+margin_top = 2.25
+margin_right = 407.25
+margin_bottom = 2.25
+
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="UIScaler/Menu"]
 volume_db = -10.0
 autoplay = true
-script = ExtResource( 9 )
+script = ExtResource( 10 )
 id = "Menu"
 
 [connection signal="file_selected" from="UIScaler/Menu/Save_dialog" to="UIScaler/Menu" method="_on_Save_dialog_file_selected"]
@@ -196,3 +217,4 @@ id = "Menu"
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Options" to="UIScaler/Menu" method="_on_Options_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Stats" to="UIScaler/Menu" method="_on_Stats_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Quit" to="UIScaler/Menu" method="_on_Quit_pressed"]
+[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Achievements" to="UIScaler/Menu" method="_on_Achievements_pressed"]
