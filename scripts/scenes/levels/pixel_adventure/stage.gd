@@ -1,4 +1,5 @@
 extends Node
+
 func _on_Area2D2_body_entered(body):
 	if body.name == "player":
 		get_tree().change_scene("scenes/GameOver.tscn")
@@ -16,7 +17,6 @@ func save():
 
 
 
-
 func _on_nextlevel_body_entered(body):
-	if body.name == "player":
-		get_tree().change_scene("scenes/stages/pixel_adventure/stage2.tscn")
+    if body.name == "player":
+        get_tree().change_scene("scenes/stages/pixel_adventure/stage2.tscn")

@@ -129,3 +129,9 @@ KEY_INFO,"To enter the Multiplayer mode, an internet connection is required. How
 2. Votre pseudo. Votre pseudo est affiché au dessus de votre personnage.
 
 * PENSEZ À CETTE DÉCISION PARCE QUE L’ADMINISTRATEUR DE SERVEUR NE PEUT LE COMMENCER !!!"
+KEY_MULTI,Multiplayer Mode,Modo multijugador,Mehrspielermodus,Tryb Wieloosobowy,Modalità multigiocatore,Modo multijogador,Mode multijoueur
+KEY_HOST,Host,Anfitrión,Wirt,Hostuj,Ospite,Hospedeiro,Hôte
+KEY_JOIN,Join,Unirse,Beitreten,Dolacz,Aderire,Junte-se,Joindre
+KEY_NAME,Name:,Nombre:,Name:,Imie:,Nome:,Nome:,Prénom:
+KEY_A_P,Awaiting Players...,Esperando jugadores ...,Spieler werden erwartet ...,Oczekujacy Gracze…,In attesa di giocatori ...,Aguardando jogadores ...,Joueurs en attente ...
+KEY_START,START!,¡COMIENZO!,START!,START!,INIZIO!,COMEÇAR!,DÉBUT!

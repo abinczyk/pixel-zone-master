@@ -20,3 +20,7 @@ func _on_Multiplayer_pressed():
 	get_tree().change_scene("res://multiplayer-bomber/lobby.tscn")
 var output = []
 
+
+
+func _on_Report_error_pressed():
+    pass # Replace with function body.

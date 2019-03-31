@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+signal achieve2
 const GRAVITY_VEC = Vector2(0, 900)
 const FLOOR_NORMAL = Vector2(0, -1)
 const SLOPE_SLIDE_STOP = 25.0
@@ -18,6 +18,10 @@ var weapon_current = default_weapon
 var weapon_up = preload("res://scenes/bullet_modified.tscn").instance()
 var anim=""
 onready var sprite = $sprite
+func _process(delta):
+    if $"/root/killed_enemies".points == 10:
+        emit_signal("achieve2")
+        $anim.play("achievement")
 func _physics_process(delta):
 	get_node("ui/Coins_points").set_text(str(get_node("/root/game_state").points))
 	if $ui/ProgressBar.value == 0:
@@ -119,5 +123,17 @@ func _on_Area2D2_area_entered(area):
 		$ui/ProgressBar.value -= 3
 	if area.name == "bossarea":
 		$ui/ProgressBar.value -= 3
+
+    
+
+
+func _on_stage2_normal_achieve1():
+    $anim.play("achievement")
+    get_node("ui/GameUI/UIScaler/Menu/OptionsPage/TabContainer/Achievements/Achievement1").show()
+
+
+func _on_Timer_timeout():
+    $ui/Panel.hide()
+    
 func set_player_name(new_name):
 	get_node("label").set_text(new_name)

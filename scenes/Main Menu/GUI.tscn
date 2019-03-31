@@ -61,7 +61,7 @@ margin_right = 333.0
 margin_bottom = 72.0
 theme = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
-text = "Multiplayer (BETA!)"
+text = "KEY_MULTI"
 
 [node name="Quit" type="Button" parent="TextureRect/VBoxContainer"]
 margin_top = 76.0

@@ -1,20 +1,21 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=2]
 [ext_resource path="res://sprite.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scripts/camera.gd" type="Script" id=4]
-[ext_resource path="res://sounds/sound_jump.wav" type="AudioStream" id=5]
-[ext_resource path="res://sounds/sound_shoot.wav" type="AudioStream" id=6]
-[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=7]
-[ext_resource path="res://textures/osb_left.png" type="Texture" id=8]
-[ext_resource path="res://textures/osb_right.png" type="Texture" id=9]
-[ext_resource path="res://textures/osb_jump.png" type="Texture" id=10]
-[ext_resource path="res://textures/osb_fire.png" type="Texture" id=11]
-[ext_resource path="res://animations/loaded_level.tres" type="Animation" id=12]
-[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=13]
-[ext_resource path="res://scenes/timer.tscn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/GameUI.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/achievement.tres" type="Animation" id=4]
+[ext_resource path="res://scripts/camera.gd" type="Script" id=5]
+[ext_resource path="res://sounds/sound_jump.wav" type="AudioStream" id=6]
+[ext_resource path="res://sounds/sound_shoot.wav" type="AudioStream" id=7]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=8]
+[ext_resource path="res://textures/osb_left.png" type="Texture" id=9]
+[ext_resource path="res://textures/osb_right.png" type="Texture" id=10]
+[ext_resource path="res://textures/osb_jump.png" type="Texture" id=11]
+[ext_resource path="res://textures/osb_fire.png" type="Texture" id=12]
+[ext_resource path="res://animations/loaded_level.tres" type="Animation" id=13]
+[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=14]
+[ext_resource path="res://scenes/timer.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/GameUI.tscn" type="PackedScene" id=16]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 5.81836
@@ -219,7 +220,7 @@ shape = SubResource( 1 )
 [node name="sprite" parent="." instance=ExtResource( 3 )]
 
 [node name="anim" type="AnimationPlayer" parent="."]
-playback_speed = 1.4
+anims/achievement = ExtResource( 4 )
 anims/crouch = SubResource( 2 )
 anims/falling = SubResource( 3 )
 anims/falling_weapon = SubResource( 4 )
@@ -239,31 +240,33 @@ limit_left = 0
 limit_top = 0
 smoothing_enabled = true
 smoothing_speed = 3.5
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.291992, -0.835023 )
 shape = SubResource( 1 )
 
 [node name="sound_jump" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 bus = "SFX"
 
 [node name="sound_shoot" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 7 )
 bus = "SFX"
 
 [node name="ui" type="CanvasLayer" parent="."]
 layer = 0
 
 [node name="ProgressBar" type="ProgressBar" parent="ui"]
+pause_mode = 2
 margin_top = 25.5
 margin_right = 76.0
 margin_bottom = 51.5
 custom_fonts/font = ExtResource( 2 )
 value = 100.0
 
-[node name="coin" parent="ui" instance=ExtResource( 7 )]
+[node name="coin" parent="ui" instance=ExtResource( 8 )]
+pause_mode = 2
 position = Vector2( 10.5185, 10.9629 )
 
 [node name="Coins_points" type="RichTextLabel" parent="ui"]
@@ -276,7 +279,7 @@ custom_fonts/normal_font = ExtResource( 2 )
 [node name="left" type="TouchScreenButton" parent="ui"]
 position = Vector2( 27.759, 490 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 8 )
+normal = ExtResource( 9 )
 passby_press = true
 action = "move_left"
 visibility_mode = 1
@@ -284,7 +287,7 @@ visibility_mode = 1
 [node name="right" type="TouchScreenButton" parent="ui"]
 position = Vector2( 121.542, 490 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 9 )
+normal = ExtResource( 10 )
 passby_press = true
 action = "move_right"
 visibility_mode = 1
@@ -292,52 +295,62 @@ visibility_mode = 1
 [node name="jump" type="TouchScreenButton" parent="ui"]
 position = Vector2( 900, 490 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 10 )
+normal = ExtResource( 11 )
 action = "jump"
 visibility_mode = 1
 
 [node name="fire" type="TouchScreenButton" parent="ui"]
 position = Vector2( 900, 399 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 11 )
+normal = ExtResource( 12 )
 action = "shoot"
 visibility_mode = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ui"]
-anims/loaded_level = ExtResource( 12 )
-anims/next_level = ExtResource( 13 )
+pause_mode = 2
+anims/loaded_level = ExtResource( 13 )
+anims/next_level = ExtResource( 14 )
 
-[node name="timer" parent="ui" instance=ExtResource( 14 )]
+[node name="timer" parent="ui" instance=ExtResource( 15 )]
 margin_left = 937.001
 margin_top = -0.625
 margin_right = 3.00098
 margin_bottom = -572.625
 
 [node name="ColorRect" type="ColorRect" parent="ui"]
+visible = false
 self_modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
-[node name="GameUI" parent="ui" instance=ExtResource( 15 )]
+[node name="GameUI" parent="ui" instance=ExtResource( 16 )]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ui"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -83.0
-margin_top = -41.0
-margin_right = 83.0
-margin_bottom = 41.0
-custom_fonts/normal_font = ExtResource( 2 )
-bbcode_enabled = true
-bbcode_text = "[center]
-Start!
-[/center]"
-text = "
-Start!
-"
+margin_left = 155.25
+margin_top = -96.7501
+margin_right = 195.25
+margin_bottom = -56.7501
 
+[node name="Panel" type="Panel" parent="ui"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -100.0
+margin_right = 100.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="ui/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Achievement Unlocked!"
+align = 1
+valign = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="achieve2" from="." to="ui/GameUI" method="_on_player_achieve2"]
 [connection signal="area_entered" from="Area2D2" to="." method="_on_Area2D2_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

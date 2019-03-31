@@ -1,7 +1,7 @@
 extends Node
 
-const PLAYER_RENDER_SCN = preload("player_render.tscn")
-const PLAYER_VIEWPORT_SCN = preload("player_viewport.tscn")
+const PLAYER_RENDER_SCN = preload("res://addons/organicpencil.splitscreen/player_render.tscn")
+const PLAYER_VIEWPORT_SCN = preload("res://addons/organicpencil.splitscreen/player_viewport.tscn")
 
 var _renders = [null, null, null, null]
 var player_count = 0
