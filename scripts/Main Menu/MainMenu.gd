@@ -1,4 +1,7 @@
 extends Control
+#DLC system is in progress!
+#func _ready():
+	#Mod_Loader._ready()
 func _on_Play_pressed():
 	get_tree().change_scene("res://scenes/stages/pixel_adventure/stage.tscn")
 func _on_Quit_pressed():

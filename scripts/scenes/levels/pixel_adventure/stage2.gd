@@ -1,9 +1,7 @@
 extends Node
 signal achieve1
 
-func ready():
-	$player/ui/AnimationPlayer.play("loaded_level")
-	emit_signal("achieve1")
+
 
 
 

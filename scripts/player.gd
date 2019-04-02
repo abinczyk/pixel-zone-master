@@ -18,10 +18,7 @@ var weapon_current = default_weapon
 var weapon_up = preload("res://scenes/bullet_modified.tscn").instance()
 var anim=""
 onready var sprite = $sprite
-func _process(delta):
-    if $"/root/killed_enemies".points == 10:
-        emit_signal("achieve2")
-        $anim.play("achievement")
+
 func _physics_process(delta):
 	get_node("ui/Coins_points").set_text(str(get_node("/root/game_state").points))
 	if $ui/ProgressBar.value == 0:
@@ -129,7 +126,7 @@ func _on_Area2D2_area_entered(area):
 
 func _on_stage2_normal_achieve1():
     $anim.play("achievement")
-    $ui/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("Reach Level 2")
+    $ui/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("First Level passed")
 
 
 func _on_Timer_timeout():
@@ -138,3 +135,8 @@ func _on_Timer_timeout():
 func set_player_name(new_name):
 	get_node("label").set_text(new_name)
 
+
+
+func _on_ice_cap1_achieve3():
+	$anim.play("achievement")
+	$ui/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("So much Snow !!!")

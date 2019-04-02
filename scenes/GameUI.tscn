@@ -77,8 +77,8 @@ popup_exclusive = true
 resizable = true
 access = 2
 filters = PoolStringArray( "*.save" )
-current_dir = "/home/karol/Dokumenty/Pixel-Zone-master-master"
-current_path = "/home/karol/Dokumenty/Pixel-Zone-master-master/"
+current_dir = "/home/karol/Dokumenty/pixel-zone-master-master"
+current_path = "/home/karol/Dokumenty/pixel-zone-master-master/"
 
 [node name="Load_dialog" type="FileDialog" parent="UIScaler/Menu"]
 material = SubResource( 1 )
@@ -93,8 +93,8 @@ resizable = true
 mode = 0
 access = 2
 filters = PoolStringArray( "*.save" )
-current_dir = "/home/karol/Dokumenty/Pixel-Zone-master-master"
-current_path = "/home/karol/Dokumenty/Pixel-Zone-master-master/"
+current_dir = "/home/karol/Dokumenty/pixel-zone-master-master"
+current_path = "/home/karol/Dokumenty/pixel-zone-master-master/"
 
 [node name="HBoxContainer" type="VBoxContainer" parent="UIScaler/Menu"]
 modulate = Color( 1, 0.956863, 0.956863, 1 )
@@ -193,7 +193,7 @@ custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
-text = "Achievements"
+text = "KEY_ACH"
 flat = true
 
 [node name="AchievementsPage" parent="UIScaler/Menu" instance=ExtResource( 9 )]

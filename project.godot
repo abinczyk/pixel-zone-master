@@ -26,6 +26,7 @@ boot_splash/name_pl=""
 
 [autoload]
 
+mod_loader="*res://mod_loader.gd"
 game_health="*res://globals/game_health.gd"
 current_player="*res://globals/game_level.gd"
 game_state="*res://globals/game_state.gd"
@@ -36,7 +37,8 @@ killed_enemies="*res://scripts/scenes/StatsScene/killed_enemies.gd"
 background_load="*res://scenes/background_load.tscn"
 sprite="*res://sprite.tscn"
 screenshot="*res://scripts/screenshot.gd"
-gamestate="*res://multiplayer-bomber/gamestate.gd"
+gamestate="*res://multiplayer-mode/gamestate.gd"
+Mod_Loader="*res://Mod_Loader.tscn"
 
 [debug]
 
