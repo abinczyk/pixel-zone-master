@@ -1,9 +1,6 @@
 extends Control
-#DLC system is in progress!
-#func _ready():
-	#Mod_Loader._ready()
 func _on_Play_pressed():
-	get_tree().change_scene("res://scenes/stages/pixel_adventure/stage.tscn")
+	background_load.load_scene("user://stage_dlc1.tscn")
 func _on_Quit_pressed():
 	get_tree().quit()
 	var player_name = get_node("CharacterSelector/LineEdit").text
@@ -23,7 +20,18 @@ func _on_Multiplayer_pressed():
 	get_tree().change_scene("res://multiplayer-bomber/lobby.tscn")
 var output = []
 
-
+func _process(delta):
+	var red = $Control/red.value / 255
+	var blue = $Control/green.value / 255
+	var green = $Control/green.value / 255
+	$Control/Sprite.set_modulate(Color(red, green, blue))
 
 func _on_Report_error_pressed():
     pass # Replace with function body.
+
+
+
+
+
+func _on_Button_pressed():
+	$Control.show()

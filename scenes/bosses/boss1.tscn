@@ -177,7 +177,7 @@ angular_velocity = 2.0
 angular_velocity_random = 1.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-scale = 4.0
+scale = 1.1
 color = Color( 0.929688, 0.488931, 0.0617371, 1 )
 anim_speed = 1.0
 
@@ -201,6 +201,7 @@ anims/idle = SubResource( 3 )
 anims/walk = SubResource( 4 )
 
 [node name="sprite" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.95 )
 material = SubResource( 5 )
 texture = ExtResource( 2 )
 flip_h = true
@@ -254,6 +255,7 @@ stream = ExtResource( 5 )
 bus = "SFX"
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
+self_modulate = Color( 1, 1, 1, 0.95 )
 margin_left = -46.0
 margin_top = -48.0
 margin_right = 52.0

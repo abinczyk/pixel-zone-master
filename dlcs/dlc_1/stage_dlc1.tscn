@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scripts/scenes/levels/pixel_adventure/stage.gd" type="Script" id=1]
 [ext_resource path="res://titles/pixel_adventure.tres" type="TileSet" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=9]
 [ext_resource path="res://sounds/music.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scenes/next_level.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/power-ups/weapons/power-up_weapon.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 49.9733, 10 )
@@ -269,6 +270,9 @@ shape = SubResource( 2 )
 
 [node name="next_level" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3865.69, 1120.26 )
+
+[node name="power-up_weapon" parent="." instance=ExtResource( 12 )]
+position = Vector2( 372, 982 )
 
 [connection signal="body_entered" from="nextlevel" to="." method="_on_nextlevel_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

@@ -9,8 +9,6 @@
 [ext_resource path="res://sounds/music.ogg" type="AudioStream" id=7]
 [ext_resource path="res://scenes/bosses/boss1.tscn" type="PackedScene" id=8]
 
-
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1797.06, 10 )
 
@@ -88,14 +86,14 @@ position = Vector2( 91.125, 1742.77 )
 position = Vector2( -11.3906, 432.844 )
 shape = SubResource( 1 )
 
-[node name="boss" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3041.3, 1776.94 )
-
 [node name="nextlevel" type="Area2D" parent="."]
 position = Vector2( 3493.13, 1847.82 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nextlevel"]
 shape = SubResource( 2 )
+
+[node name="boss" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2809.5, 1205 )
 
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="nextlevel" to="." method="_on_nextlevel_body_entered"]

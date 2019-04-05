@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/Main Menu/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://textures/Main Menu/panel.png" type="Texture" id=2]
 [ext_resource path="res://themes/theme_test.tres" type="Theme" id=3]
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=4]
+[ext_resource path="res://sprite.tscn" type="PackedScene" id=5]
 
 [node name="GUI" type="Control"]
 anchor_right = 1.0
@@ -35,31 +36,50 @@ theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 4 )
 text = "KEY_Play"
 
-[node name="Play6" type="Button" parent="TextureRect/VBoxContainer"]
+[node name="Quit" type="Button" parent="TextureRect/VBoxContainer"]
 margin_top = 38.0
 margin_right = 333.0
 margin_bottom = 72.0
 theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 4 )
-text = "KEY_Play"
-
-[node name="Play7" type="Button" parent="TextureRect/VBoxContainer"]
-margin_top = 76.0
-margin_right = 333.0
-margin_bottom = 110.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
-text = "KEY_Play"
-
-[node name="Quit" type="Button" parent="TextureRect/VBoxContainer"]
-margin_top = 114.0
-margin_right = 333.0
-margin_bottom = 148.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
 text = "KEY_Quit"
 
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "GO TO CHARACTER EDITOR"
+
+[node name="Control" type="Control" parent="."]
+margin_top = 20.0
+margin_right = 187.0
+margin_bottom = 176.0
+
+[node name="red" type="HSlider" parent="Control"]
+anchor_right = 1.0
+margin_bottom = 16.0
+max_value = 255.0
+ticks_on_borders = true
+
+[node name="green" type="HSlider" parent="Control"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -8.0
+margin_bottom = 8.0
+max_value = 255.0
+ticks_on_borders = true
+
+[node name="blue" type="HSlider" parent="Control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -16.0
+max_value = 255.0
+ticks_on_borders = true
+
+[node name="Sprite" parent="Control" instance=ExtResource( 5 )]
+position = Vector2( 246, 63 )
+
 [connection signal="pressed" from="TextureRect/VBoxContainer/Play5" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/Play6" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/Play7" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

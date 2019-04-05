@@ -108,8 +108,7 @@ func _physics_process(delta):
 		$anim.play(anim)
 		
 func weapon_up():
-	weapon_current = weapon_up
-	print("Collision is working properly")
+	sprite.texture = load("res://textures/robot_demo_2.png")
 
 func _on_Area2D2_area_entered(area):
 	if area.name == "next_level":

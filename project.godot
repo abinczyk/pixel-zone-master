@@ -26,7 +26,6 @@ boot_splash/name_pl=""
 
 [autoload]
 
-mod_loader="*res://mod_loader.gd"
 game_health="*res://globals/game_health.gd"
 current_player="*res://globals/game_level.gd"
 game_state="*res://globals/game_state.gd"
@@ -38,7 +37,10 @@ background_load="*res://scenes/background_load.tscn"
 sprite="*res://sprite.tscn"
 screenshot="*res://scripts/screenshot.gd"
 gamestate="*res://multiplayer-mode/gamestate.gd"
-Mod_Loader="*res://Mod_Loader.tscn"
+
+[compression]
+
+formats/zstd/compression_level=1
 
 [debug]
 
@@ -134,6 +136,7 @@ locale_filter=[ 1, [ "ar", "en", "es", "ms", "pl_PL" ] ]
 
 limits/packet_peer_stream/max_buffer_po2=64
 remote_fs/page_size=65538
+ssl/certificates="res://www.github.com.crt"
 
 [rendering]
 
