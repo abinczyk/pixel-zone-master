@@ -1,5 +1,4 @@
 extends KinematicBody2D
-
 const GRAVITY_VEC = Vector2(0, 900)
 const FLOOR_NORMAL = Vector2(0, -1)
 const SLOPE_SLIDE_STOP = 25.0
@@ -109,6 +108,7 @@ func _physics_process(delta):
 		
 func weapon_up():
 	sprite.texture = load("res://textures/robot_demo_2.png")
+
 
 func _on_Area2D2_area_entered(area):
 	if area.name == "next_level":
