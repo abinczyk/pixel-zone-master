@@ -19,4 +19,4 @@ func save():
 
 func _on_nextlevel_body_entered(body):
     if body.name == "player":
-        get_tree().change_scene("user://stage2_dlc1.tscn")
+        get_tree().change_scene("user://dlc_1/stage2_dlc1.tscn")

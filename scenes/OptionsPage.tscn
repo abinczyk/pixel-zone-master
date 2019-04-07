@@ -42,6 +42,7 @@ margin_bottom = 591.0
 
 [node name="Controls" type="Tabs" parent="TabContainer"]
 editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -77,6 +78,83 @@ custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 shortcut = SubResource( 2 )
 text = "KEY_APPLY"
 flat = true
+
+[node name="Theme" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+theme = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Theme"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -228.0
+margin_top = -131.0
+margin_right = 228.0
+margin_bottom = 131.0
+
+[node name="Label" type="Label" parent="TabContainer/Theme/VBoxContainer"]
+margin_right = 456.0
+margin_bottom = 34.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_UI_THEME"
+align = 1
+valign = 1
+
+[node name="Yellow" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 38.0
+margin_right = 456.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Yellow"
+
+[node name="Grey" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+visible = false
+margin_top = 64.0
+margin_right = 222.0
+margin_bottom = 86.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Grey"
+
+[node name="Red" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 76.0
+margin_right = 456.0
+margin_bottom = 110.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Red"
+
+[node name="Green" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 114.0
+margin_right = 456.0
+margin_bottom = 148.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Green"
+
+[node name="Blue" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 152.0
+margin_right = 456.0
+margin_bottom = 186.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Blue"
+
+[node name="Default" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 190.0
+margin_right = 456.0
+margin_bottom = 224.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Default"
+
+[node name="Old" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 228.0
+margin_right = 456.0
+margin_bottom = 262.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Old"
 
 [node name="Language" type="Tabs" parent="TabContainer"]
 editor/display_folded = true
@@ -456,6 +534,7 @@ size_flags_vertical = 3
 min_value = -60.0
 max_value = 12.0
 rounded = true
+ticks_on_borders = true
 
 [node name="MusicBox" type="HBoxContainer" parent="TabContainer/Graphics & Audio/HBoxContainer/MusicBox"]
 editor/display_folded = true

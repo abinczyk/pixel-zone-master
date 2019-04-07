@@ -138,3 +138,14 @@ KEY_START,START!,¡COMIENZO!,START!,START!,INIZIO!,COMEÇAR!,DÉBUT!
 KEY_ACH_YOU,Your Achievements,Sus logros,Deine Erfolge,Twoje Osiagniecia,I tuoi obiettivi,Suas conquistas,Vos réalisations
 KEY_ACH_BACK,Back To Game,Volver al juego,Zurück zum Spiel,Wroc Do Gry,Ritorno al gioco,De volta ao jogo,Retour au jeu
 KEY_ACH,Achievements,Logros,Erfolge,Osiagniecia,realizzazioni,Conquistas,Réalisations
+KEY_DLCS,Show list of installed DLCs,Mostrar lista de DLC instalados,Liste der installierten DLCs anzeigen,Pokaz liste zainstalowanych dodatkow,Mostra l'elenco dei DLC installati,Mostrar lista de DLCs instalados,Afficher la liste des DLC installés
+KEY_REPORT_BUG,Report a bug,Reportar un error,Melde einen technischen Fehler,Zglos problem,Segnalare un bug,Reportar um erro,Signaler un bug
+KEY_THEME,Theme,Tema,Thema,Motyw,Tema,Tema,Thème
+KEY_Yellow,Yellow,Amarillo,Gelb,Zolty,Giallo,Amarelo,Jaune
+KEY_Grey,Grey,Gris,Grau,Szary,Grigio,Cinzento,Gris
+KEY_Red,Red,Rojo,rot,Czerwony,Rosso,Vermelho,Rouge
+KEY_Green,Green,Verde,Grün,Zielony,Verde,Verde,Vert
+KEY_Blue,Blue,Azul,Blau,Niebieski,Blu,Azul,Bleu
+KEY_Default,Default,Defecto,Standard,Domyslny,Predefinito,Padrão,Défaut
+KEY_Old,Old,Antiguo,Alt,Stary,Vecchio,Velho,Vieux
+KEY_UI_THEME,Select Interface Theme,Seleccione el tema de la interfaz,Wählen Sie Interface Theme,Wybierz motyw interfejsu,Seleziona il tema dell'interfaccia,Selecione o tema da interface,Sélectionnez le thème d'interface

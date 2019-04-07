@@ -46,6 +46,10 @@ formats/zstd/compression_level=1
 
 settings/stdout/print_fps=true
 
+[display]
+
+window/size/resizable=false
+
 [editor_plugins]
 
 enabled=PoolStringArray( "custom_import_plugin", "custom_node", "zylann.project_stats" )

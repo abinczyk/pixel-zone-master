@@ -9,6 +9,8 @@
 [ext_resource path="res://sounds/music.ogg" type="AudioStream" id=7]
 [ext_resource path="res://scenes/bosses/boss1.tscn" type="PackedScene" id=8]
 
+
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1797.06, 10 )
 

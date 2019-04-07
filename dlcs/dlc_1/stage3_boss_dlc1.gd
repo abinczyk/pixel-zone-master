@@ -15,4 +15,4 @@ func _ready():
 
 func _on_nextlevel_body_entered(body):
 	if body.name == "player":
-		get_tree().change_scene("user://ice_01_dlc1.tscn")
+		get_tree().change_scene("user://dlc_1/ice_01_dlc1.tscn")
