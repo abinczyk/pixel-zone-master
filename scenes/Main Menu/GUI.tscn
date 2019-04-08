@@ -382,7 +382,6 @@ SOFTWARE.
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
-autoplay = true
 
 [connection signal="pressed" from="TextureRect/HBoxContainer/PP" to="." method="_on_PP_pressed"]
 [connection signal="pressed" from="TextureRect/HBoxContainer/License" to="." method="_on_License_pressed"]

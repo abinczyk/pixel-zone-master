@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/GameUI.gd" type="Script" id=1]
 [ext_resource path="res://scripts/LevelViewport.gd" type="Script" id=2]
@@ -6,12 +6,9 @@
 [ext_resource path="res://scripts/Menu.gd" type="Script" id=4]
 [ext_resource path="res://scripts/scenes/StatsScene/StatsScene.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/OptionsPage.tscn" type="PackedScene" id=6]
-[ext_resource path="res://themes/theme_test.tres" type="Theme" id=7]
-[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=8]
-[ext_resource path="res://scenes/Achievements.tscn" type="PackedScene" id=9]
-[ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=10]
-
-[sub_resource type="CanvasItemMaterial" id=1]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=7]
+[ext_resource path="res://scenes/Achievements.tscn" type="PackedScene" id=8]
+[ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=9]
 
 [sub_resource type="ButtonGroup" id=2]
 
@@ -67,35 +64,6 @@ visible = false
 margin_left = 479.251
 margin_right = 479.251
 
-[node name="Save_dialog" type="FileDialog" parent="UIScaler/Menu"]
-margin_left = 783.751
-margin_top = 119.5
-margin_right = 1192.75
-margin_bottom = 461.5
-theme = ExtResource( 7 )
-popup_exclusive = true
-resizable = true
-access = 2
-filters = PoolStringArray( "*.save" )
-current_dir = "/home/karol/Dokumenty/pixel-zone-master-master"
-current_path = "/home/karol/Dokumenty/pixel-zone-master-master/"
-
-[node name="Load_dialog" type="FileDialog" parent="UIScaler/Menu"]
-material = SubResource( 1 )
-margin_left = 867.001
-margin_top = 155.5
-margin_right = 1248.0
-margin_bottom = 497.5
-theme = ExtResource( 7 )
-popup_exclusive = true
-window_title = "Otwórz plik"
-resizable = true
-mode = 0
-access = 2
-filters = PoolStringArray( "*.save" )
-current_dir = "/home/karol/Dokumenty/pixel-zone-master-master"
-current_path = "/home/karol/Dokumenty/pixel-zone-master-master/"
-
 [node name="HBoxContainer" type="VBoxContainer" parent="UIScaler/Menu"]
 modulate = Color( 1, 0.956863, 0.956863, 1 )
 anchor_left = 0.5
@@ -115,7 +83,7 @@ margin_right = 230.0
 margin_bottom = 71.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "KEY_SAVE"
 flat = true
@@ -126,7 +94,7 @@ margin_right = 230.0
 margin_bottom = 146.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "KEY_Return"
 flat = true
@@ -137,7 +105,7 @@ margin_right = 230.0
 margin_bottom = 221.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -150,7 +118,7 @@ margin_right = 230.0
 margin_bottom = 296.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -163,7 +131,7 @@ margin_right = 230.0
 margin_bottom = 371.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -176,7 +144,7 @@ margin_right = 230.0
 margin_bottom = 446.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -189,14 +157,14 @@ margin_right = 230.0
 margin_bottom = 525.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
 text = "KEY_ACH"
 flat = true
 
-[node name="AchievementsPage" parent="UIScaler/Menu" instance=ExtResource( 9 )]
+[node name="AchievementsPage" parent="UIScaler/Menu" instance=ExtResource( 8 )]
 visible = false
 margin_left = 407.25
 margin_top = 2.25
@@ -206,14 +174,10 @@ margin_bottom = 2.25
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="UIScaler/Menu"]
 volume_db = -10.0
 autoplay = true
-script = ExtResource( 10 )
+script = ExtResource( 9 )
 id = "Menu"
 
-[connection signal="file_selected" from="UIScaler/Menu/Save_dialog" to="UIScaler/Menu" method="_on_Save_dialog_file_selected"]
-[connection signal="file_selected" from="UIScaler/Menu/Load_dialog" to="UIScaler/Menu" method="_on_Load_dialog_file_selected"]
-[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Save" to="UIScaler/Menu" method="_on_Save_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Return" to="UIScaler/Menu" method="_on_Return_pressed"]
-[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Load" to="UIScaler/Menu" method="_on_Load_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Options" to="UIScaler/Menu" method="_on_Options_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Stats" to="UIScaler/Menu" method="_on_Stats_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Quit" to="UIScaler/Menu" method="_on_Quit_pressed"]

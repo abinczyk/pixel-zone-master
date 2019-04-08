@@ -13,9 +13,6 @@ func _on_Play_pressed():
 		
 func _on_Quit_pressed():
 	get_tree().quit()
-	var player_name = get_node("CharacterSelector/LineEdit").text
-var current_player = 0
-signal current_player_changed
 func _process(delta):
 	var b = File.new()
 	if b.file_exists("user://report_bug/BugReporter.tscn"):

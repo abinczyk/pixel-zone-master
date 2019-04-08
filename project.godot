@@ -17,7 +17,6 @@ _global_script_class_icons={
 
 config/name="Pixel Zone"
 run/main_scene="res://scenes/intro.tscn"
-boot_splash/image="res://cutscenes/rendered/image sequences/intro/0001-0183 001.jpg"
 config/icon="res://icon.png"
 boot_splash/application/name_pl=""
 boot_splash/application/name_en=""
@@ -37,6 +36,7 @@ background_load="*res://scenes/background_load.tscn"
 sprite="*res://sprite.tscn"
 screenshot="*res://scripts/screenshot.gd"
 gamestate="*res://multiplayer-mode/gamestate.gd"
+save_load="*res://save_load.tscn"
 
 [compression]
 
