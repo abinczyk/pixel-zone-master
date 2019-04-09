@@ -146,6 +146,11 @@ KEY_Grey,Grey,Gris,Grau,Szary,Grigio,Cinzento,Gris
 KEY_Red,Red,Rojo,rot,Czerwony,Rosso,Vermelho,Rouge
 KEY_Green,Green,Verde,Grün,Zielony,Verde,Verde,Vert
 KEY_Blue,Blue,Azul,Blau,Niebieski,Blu,Azul,Bleu
-KEY_Default,Default,Defecto,Standard,Domyslny,Predefinito,Padrão,Défaut
+KEY_Default,Modern,Moderno,Modern,Nowoczesny,Moderno,Moderno,Moderne
 KEY_Old,Old,Antiguo,Alt,Stary,Vecchio,Velho,Vieux
 KEY_UI_THEME,Select Interface Theme,Seleccione el tema de la interfaz,Wählen Sie Interface Theme,Wybierz motyw interfejsu,Seleziona il tema dell'interfaccia,Selecione o tema da interface,Sélectionnez le thème d'interface
+KEY_Neon,Neon,Neón,Neon,Neon,Neon,Néon,Néon
+KEY_Alien,Alien,Extraterrestre,Ausländer,Obcy,Alieno,Estrangeiro,Extraterrestre
+KEY_Light,Light,Brillante,Hell,Jasny,Luminoso,Brilhante,Brillant
+KEY_Solarized_dark,Solarized Dark,Oscuridad solarizada,Solarized Dark,Solaryzowany Ciemny,Solarized Dark,Escuro Solarizado,Dark Solarized
+KEY_Solarized_light,Solarized Light,Luz solarizada,Solarisiertes Licht,Solaryzowany Jasny,Solarized Bright,Brilhante Solarizado,Lumineux Solarisé

@@ -42,7 +42,6 @@ size_flags_vertical = 0
 custom_colors/font_color = Color( 0.229156, 1, 0.239205, 1 )
 
 [node name="axes" type="Control" parent="."]
-editor/display_folded = true
 margin_left = 48.0
 margin_right = 88.0
 margin_bottom = 40.0
@@ -157,127 +156,6 @@ min_value = -100.0
 step = 0.0001
 percent_visible = false
 
-[node name="axis_val0" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 60.0
-margin_right = 260.0
-margin_bottom = 75.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val1" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 80.0
-margin_right = 260.0
-margin_bottom = 95.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val2" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 100.0
-margin_right = 260.0
-margin_bottom = 115.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val3" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 120.0
-margin_right = 260.0
-margin_bottom = 135.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val4" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 140.0
-margin_right = 260.0
-margin_bottom = 155.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val5" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 160.0
-margin_right = 260.0
-margin_bottom = 175.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val6" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 180.0
-margin_right = 260.0
-margin_bottom = 195.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val7" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 200.0
-margin_right = 260.0
-margin_bottom = 215.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val8" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 220.0
-margin_right = 260.0
-margin_bottom = 235.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val9" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 240.0
-margin_right = 260.0
-margin_bottom = 255.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
-[node name="axis_val10" type="Label" parent="axes"]
-margin_left = 60.0
-margin_top = 260.0
-margin_right = 260.0
-margin_bottom = 275.0
-size_flags_horizontal = 2
-size_flags_vertical = 0
-text = "0"
-align = 1
-valign = 1
-
 [node name="label_axis0" type="Label" parent="axes"]
 margin_left = -48.0
 margin_top = 60.0
@@ -387,6 +265,72 @@ size_flags_horizontal = 2
 size_flags_vertical = 0
 text = "KEY_Axis10"
 valign = 2
+
+[node name="axis_val0" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val1" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val2" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val3" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val4" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val5" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val6" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val7" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val8" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val9" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
+
+[node name="axis_val10" type="Label" parent="axes"]
+margin_left = 1.5
+margin_top = -91.5
+margin_right = 41.5
+margin_bottom = -77.5
 
 [node name="buttons" type="Control" parent="."]
 editor/display_folded = true
@@ -563,7 +507,6 @@ text = "15"
 align = 1
 
 [node name="vibration" type="Control" parent="."]
-editor/display_folded = true
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -608,7 +551,7 @@ value = 1.0
 [node name="vibration_strong_value" type="SpinBox" parent="vibration"]
 margin_left = 180.0
 margin_top = 408.0
-margin_right = 239.0
+margin_right = 254.0
 margin_bottom = 432.0
 size_flags_horizontal = 2
 size_flags_vertical = 2
@@ -619,7 +562,7 @@ value = 1.0
 [node name="vibration_duration_value" type="SpinBox" parent="vibration"]
 margin_left = 180.0
 margin_top = 449.0
-margin_right = 239.0
+margin_right = 254.0
 margin_bottom = 473.0
 size_flags_horizontal = 2
 size_flags_vertical = 2

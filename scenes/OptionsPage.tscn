@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scripts/scenes/OptionsPage/OptionsPage.gd" type="Script" id=1]
 [ext_resource path="res://themes/theme_test.tres" type="Theme" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scripts/scenes/OptionsPage/VSyncBox.gd" type="Script" id=7]
 [ext_resource path="res://scripts/scenes/OptionsPage/MusicBox.gd" type="Script" id=8]
 [ext_resource path="res://scenes/controller-input-test/joypads.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/controller-input-test/joypads.gd" type="Script" id=10]
 
 [sub_resource type="InputEventAction" id=1]
 action = "ui_accept"
@@ -28,6 +29,8 @@ shortcut = SubResource( 1 )
 self_modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -1.5
+margin_right = -1.5
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 1 )
@@ -80,6 +83,7 @@ text = "KEY_APPLY"
 flat = true
 
 [node name="Theme" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -94,9 +98,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -228.0
-margin_top = -131.0
+margin_top = -245.0
 margin_right = 228.0
-margin_bottom = 131.0
+margin_bottom = 245.0
 
 [node name="Label" type="Label" parent="TabContainer/Theme/VBoxContainer"]
 margin_right = 456.0
@@ -113,46 +117,88 @@ margin_bottom = 72.0
 custom_fonts/font = ExtResource( 3 )
 text = "KEY_Yellow"
 
-[node name="Grey" type="Button" parent="TabContainer/Theme/VBoxContainer"]
-visible = false
-margin_top = 64.0
-margin_right = 222.0
-margin_bottom = 86.0
-custom_fonts/font = ExtResource( 3 )
-text = "KEY_Grey"
-
-[node name="Red" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+[node name="Neon" type="Button" parent="TabContainer/Theme/VBoxContainer"]
 margin_top = 76.0
 margin_right = 456.0
 margin_bottom = 110.0
 custom_fonts/font = ExtResource( 3 )
-text = "KEY_Red"
+text = "KEY_Neon"
 
-[node name="Green" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+[node name="RPGM" type="Button" parent="TabContainer/Theme/VBoxContainer"]
 margin_top = 114.0
 margin_right = 456.0
 margin_bottom = 148.0
 custom_fonts/font = ExtResource( 3 )
-text = "KEY_Green"
+text = "RPG"
 
-[node name="Blue" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+[node name="Alien" type="Button" parent="TabContainer/Theme/VBoxContainer"]
 margin_top = 152.0
 margin_right = 456.0
 margin_bottom = 186.0
 custom_fonts/font = ExtResource( 3 )
-text = "KEY_Blue"
+text = "KEY_Alien"
 
-[node name="Default" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+[node name="Light" type="Button" parent="TabContainer/Theme/VBoxContainer"]
 margin_top = 190.0
 margin_right = 456.0
 margin_bottom = 224.0
 custom_fonts/font = ExtResource( 3 )
-text = "KEY_Default"
+text = "KEY_Light"
 
-[node name="Old" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+[node name="Solarized_dark" type="Button" parent="TabContainer/Theme/VBoxContainer"]
 margin_top = 228.0
 margin_right = 456.0
 margin_bottom = 262.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Solarized_dark"
+
+[node name="Solarized_light" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 266.0
+margin_right = 456.0
+margin_bottom = 300.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Solarized_light"
+
+[node name="Grey" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+visible = false
+margin_top = 304.0
+margin_right = 456.0
+margin_bottom = 338.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Grey"
+
+[node name="Red" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 304.0
+margin_right = 456.0
+margin_bottom = 338.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Red"
+
+[node name="Green" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 342.0
+margin_right = 456.0
+margin_bottom = 376.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Green"
+
+[node name="Blue" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 380.0
+margin_right = 456.0
+margin_bottom = 414.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Blue"
+
+[node name="Default" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 418.0
+margin_right = 456.0
+margin_bottom = 452.0
+custom_fonts/font = ExtResource( 3 )
+text = "KEY_Default"
+
+[node name="Old" type="Button" parent="TabContainer/Theme/VBoxContainer"]
+margin_top = 456.0
+margin_right = 456.0
+margin_bottom = 490.0
 custom_fonts/font = ExtResource( 3 )
 text = "KEY_Old"
 
@@ -183,26 +229,7 @@ shortcut = SubResource( 2 )
 text = "KEY_APPLY"
 flat = true
 
-[node name="langs" type="VBoxContainer" parent="TabContainer/Language"]
-margin_left = 177.0
-margin_top = 39.125
-margin_right = 250.0
-margin_bottom = 113.125
-
-[node name="American_langs" type="Button" parent="TabContainer/Language/langs"]
-margin_right = 73.0
-margin_bottom = 22.0
-text = "American"
-
-[node name="Europe_langs" type="Button" parent="TabContainer/Language/langs"]
-margin_top = 26.0
-margin_right = 73.0
-margin_bottom = 48.0
-text = "Europe"
-
 [node name="Europe" type="VBoxContainer" parent="TabContainer/Language"]
-editor/display_folded = true
-visible = false
 margin_left = 263.75
 margin_top = 39.1251
 margin_right = 367.75
@@ -248,17 +275,6 @@ margin_top = 156.0
 margin_right = 104.0
 margin_bottom = 178.0
 text = "LANG_ES"
-
-[node name="American" type="VBoxContainer" parent="TabContainer/Language"]
-margin_left = 263.75
-margin_top = 39.125
-margin_right = 367.75
-margin_bottom = 349.125
-
-[node name="USA" type="Button" parent="TabContainer/Language/American"]
-margin_right = 104.0
-margin_bottom = 22.0
-text = "LANG_EN"
 
 [node name="Graphics & Audio" type="Tabs" parent="TabContainer"]
 editor/display_folded = true
@@ -648,7 +664,6 @@ rounded = true
 ticks_on_borders = true
 
 [node name="Controller Test" type="Tabs" parent="TabContainer"]
-editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -658,11 +673,10 @@ margin_right = -4.0
 margin_bottom = -4.0
 
 [node name="joypads" parent="TabContainer/Controller Test" instance=ExtResource( 9 )]
+script = ExtResource( 10 )
 
 [connection signal="pressed" from="TabContainer/Controls/ApplyButton2" to="." method="_on_ApplyButton_pressed"]
 [connection signal="pressed" from="TabContainer/Language/ApplyButton3" to="." method="_on_ApplyButton_pressed"]
-[connection signal="pressed" from="TabContainer/Language/langs/American_langs" to="." method="_on_American_langs_pressed"]
-[connection signal="pressed" from="TabContainer/Language/langs/Europe_langs" to="." method="_on_Europe_langs_pressed"]
 [connection signal="pressed" from="TabContainer/Language/Europe/Englisch" to="." method="_on_Englisch_pressed"]
 [connection signal="pressed" from="TabContainer/Language/Europe/Portuguese" to="." method="_on_Portuguese_pressed"]
 [connection signal="pressed" from="TabContainer/Language/Europe/French" to="." method="_on_French_pressed"]
@@ -670,5 +684,4 @@ margin_bottom = -4.0
 [connection signal="pressed" from="TabContainer/Language/Europe/Detusch" to="." method="_on_Detusch_pressed"]
 [connection signal="pressed" from="TabContainer/Language/Europe/Italiano" to="." method="_on_Italiano_pressed"]
 [connection signal="pressed" from="TabContainer/Language/Europe/Spanisch" to="." method="_on_Spanisch_pressed"]
-[connection signal="pressed" from="TabContainer/Language/American/USA" to="." method="_on_USA_pressed"]
 [connection signal="pressed" from="TabContainer/Graphics & Audio/HBoxContainer/GraphicsBox/ApplyButton" to="." method="_on_ApplyButton_pressed"]

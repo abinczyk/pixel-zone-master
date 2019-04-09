@@ -23,7 +23,7 @@ func show_page(node):
 	current_page = node
 
 func _on_Quit_pressed():
-	get_tree().quit()
+	background_load.load_scene("res://scenes/Main Menu/GUI.tscn")
 
 # when preesed "Return" or "No" button in Quit Page
 func _on_Return_pressed():
@@ -59,9 +59,6 @@ func _on_Save_pressed():
 
 func _on_Load_pressed():
     $SlotBoxPage.show()
-
-func _on_ConfirmationDialog_confirmed():
-	get_tree().quit()
 
 func _on_Achievements_pressed():
     $AchievementsPage.show()

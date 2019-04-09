@@ -24,20 +24,3 @@ func _on_French_pressed():
 	TranslationServer.set_locale("fr")
 
 
-
-func _on_Europe_langs_pressed():
-	$TabContainer/Language/Europe.show()
-	#$TabContainer/Language/Asia.hide()
-	$TabContainer/Language/American.hide()
-
-
-func _on_American_langs_pressed():
-	$TabContainer/Language/Europe.hide()
-	#$TabContainer/Language/Asia.hide()
-	$TabContainer/Language/American.show()
-
-func _on_USA_pressed():
-	TranslationServer.set_locale("en")
-
-
-

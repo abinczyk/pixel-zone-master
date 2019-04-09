@@ -1,4 +1,4 @@
-extends RichTextLabel
+extends Label
 var ms = 0
 var s = 0
 var m = 0

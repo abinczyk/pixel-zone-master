@@ -19,8 +19,7 @@ var anim=""
 onready var sprite = $sprite
 
 func _physics_process(delta):
-	get_node("ui/Coins_points").set_text(str(get_node("/root/game_state").points))
-	if $ui/ProgressBar.value == 0:
+	if $ui/Control/ProgressBar.value == 0:
 		get_tree().change_scene("scenes/GameOver.tscn")
 	onair_time += delta
 	shoot_time += delta
@@ -116,16 +115,16 @@ func _on_Area2D2_area_entered(area):
 	if area.name == "next_level2":
 		$ui/AnimationPlayer.play("next_level")
 	if area.name == "enemyarea":
-		$ui/ProgressBar.value -= 3
+		$ui/Control/ProgressBar.value -= 3
 	if area.name == "bossarea":
-		$ui/ProgressBar.value -= 3
+		$ui/Control/ProgressBar.value -= 3
 
     
 
 
 func _on_stage2_normal_achieve1():
     $anim.play("achievement")
-    $ui/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("First Level passed")
+    $ui/Control/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("First Level passed")
 
 
 func _on_Timer_timeout():
@@ -138,4 +137,4 @@ func set_player_name(new_name):
 
 func _on_ice_cap1_achieve3():
 	$anim.play("achievement")
-	$ui/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("So much Snow !!!")
+	$ui/Control/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("So much Snow !!!")

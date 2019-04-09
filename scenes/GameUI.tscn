@@ -10,7 +10,7 @@
 [ext_resource path="res://scenes/Achievements.tscn" type="PackedScene" id=8]
 [ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=9]
 
-[sub_resource type="ButtonGroup" id=2]
+[sub_resource type="ButtonGroup" id=1]
 
 [node name="GameUI" type="Control"]
 pause_mode = 2
@@ -108,7 +108,7 @@ size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
-group = SubResource( 2 )
+group = SubResource( 1 )
 text = "KEY_Load"
 flat = true
 
@@ -121,7 +121,7 @@ size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
-group = SubResource( 2 )
+group = SubResource( 1 )
 text = "KEY_Options"
 flat = true
 
@@ -134,7 +134,7 @@ size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
-group = SubResource( 2 )
+group = SubResource( 1 )
 text = "KEY_Stats"
 flat = true
 
@@ -147,7 +147,7 @@ size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
-group = SubResource( 2 )
+group = SubResource( 1 )
 text = "KEY_Quit"
 flat = true
 
@@ -160,7 +160,7 @@ size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
-group = SubResource( 2 )
+group = SubResource( 1 )
 text = "KEY_ACH"
 flat = true
 

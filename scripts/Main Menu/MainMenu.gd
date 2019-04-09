@@ -30,8 +30,6 @@ func _ready():
 		$TextureRect/WindowDialog/ItemList.add_item("Power Up!")
 	if c.file_exists("user://report_bug/BugReporter.tscn"):
 		$TextureRect/WindowDialog/ItemList.add_item("Report a Bug")
-func _on_Multiplayer_pressed():
-	get_tree().change_scene("res://multiplayer-bomber/lobby.tscn")
 
 func _on_Play7_pressed():
 	OS.shell_open("https://github.com/MasterPolska123/pixel-zone-master/issues")
