@@ -17,7 +17,8 @@ var weapon_current = default_weapon
 var weapon_up = preload("res://scenes/bullet_modified.tscn").instance()
 var anim=""
 onready var sprite = $sprite
-
+func _ready():
+	$"/root/game_health".points == 0
 func _physics_process(delta):
 	if $ui/Control/ProgressBar.value == 0:
 		get_tree().change_scene("scenes/GameOver.tscn")
@@ -44,10 +45,6 @@ func _physics_process(delta):
 		target_speed += -1
 	if Input.is_action_pressed("move_right"):
 		target_speed +=  1
-	if Input.is_action_pressed("speed_left"):
-		target_speed += -1.1
-	if Input.is_action_pressed("speed_right"):
-		target_speed += 1.1
 	if Input.is_action_pressed("speed") and Input.is_action_pressed("move_left"):
 		target_speed += -1.1
 	if Input.is_action_pressed("speed") and Input.is_action_pressed("move_right"):
@@ -65,6 +62,8 @@ func _physics_process(delta):
 		var weapon_up = preload("res://scenes/bullet_modified.tscn").instance()
 		var default_weapon = preload("res://scenes/bullet.tscn").instance()
 		var weapon_current = default_weapon
+		if $"/root/game_health".points == 1:
+			weapon_current = weapon_up
 		weapon_current.position = $sprite/bullet_shoot.global_position #use node for shoot position
 		weapon_current.linear_velocity = Vector2(sprite.scale.x * BULLET_VELOCITY, 0)
 		weapon_current.add_collision_exception_with(self) # don't want player to collide with bullet
@@ -106,7 +105,8 @@ func _physics_process(delta):
 		$anim.play(anim)
 		
 func weapon_up():
-	sprite.texture = load("res://textures/robot_demo_2.png")
+	$ui/Control/ProgressBar.set_value(100)
+	$ui/AnimationPlayer.play("full_health")
 
 
 func _on_Area2D2_area_entered(area):
@@ -118,23 +118,13 @@ func _on_Area2D2_area_entered(area):
 		$ui/Control/ProgressBar.value -= 3
 	if area.name == "bossarea":
 		$ui/Control/ProgressBar.value -= 3
-
-    
-
-
 func _on_stage2_normal_achieve1():
     $anim.play("achievement")
     $ui/Control/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("First Level passed")
-
-
 func _on_Timer_timeout():
     $ui/Panel.hide()
-    
 func set_player_name(new_name):
 	get_node("label").set_text(new_name)
-
-
-
 func _on_ice_cap1_achieve3():
 	$anim.play("achievement")
 	$ui/Control/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("So much Snow !!!")
