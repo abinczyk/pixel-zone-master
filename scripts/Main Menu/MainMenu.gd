@@ -22,19 +22,13 @@ func _process(delta):
 func _ready():
 	settings.connect("window_size_changed", self, "_on_window_size_changeds")
 	var c = File.new()
-	if not c.file_exists("user://music_dlc/music.ogg"):
-		$AudioStreamPlayer.stop()
-	if c.file_exists("user://music_dlc/music.ogg"):
-		$AudioStreamPlayer.play()
+	var d = File.new()
 	if c.file_exists("user://dlc_1/stage_dlc1.tscn"):
 		$TextureRect/WindowDialog/ItemList.add_item("Power Up!")
 	if c.file_exists("user://report_bug/BugReporter.tscn"):
 		$TextureRect/WindowDialog/ItemList.add_item("Report a Bug")
-
 func _on_Play7_pressed():
 	OS.shell_open("https://github.com/MasterPolska123/pixel-zone-master/issues")
-
-
 func _on_Play6_pressed():
 	$TextureRect/WindowDialog.popup_centered()
 
@@ -60,3 +54,7 @@ func _on_MITLicense_pressed():
 	$TextureRect/PixelZoneLicense.hide()
 	$TextureRect/MITLicense.popup_centered()
 	$TextureRect/GodotEngineLicense.hide()
+
+
+func _on_Licenses_pressed():
+	$TextureRect/LicenseSelector.popup_centered()
