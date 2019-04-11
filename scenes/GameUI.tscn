@@ -86,7 +86,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
-disabled = true
 text = "KEY_SAVE"
 flat = true
 
@@ -109,7 +108,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
-disabled = true
 toggle_mode = true
 group = SubResource( 1 )
 text = "KEY_Load"

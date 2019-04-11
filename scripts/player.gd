@@ -106,13 +106,10 @@ func _physics_process(delta):
 		
 func weapon_up():
 	$ui/Control/ProgressBar.set_value(100)
-	$ui/AnimationPlayer.play("full_health")
-
-
+func health50():
+	$ui/Control/ProgressBar.value += 50
 func _on_Area2D2_area_entered(area):
 	if area.name == "next_level":
-		$ui/AnimationPlayer.play("next_level")
-	if area.name == "next_level2":
 		$ui/AnimationPlayer.play("next_level")
 	if area.name == "enemyarea":
 		$ui/Control/ProgressBar.value -= 3

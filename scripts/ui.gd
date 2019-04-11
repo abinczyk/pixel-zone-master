@@ -3,7 +3,6 @@ var solarized_light = load("res://themes/solarized_light.tres")
 var solarized_dark = load("res://themes/solarized_dark.tres")
 var light = load("res://themes/light.tres")
 var alien = load("res://themes/alien.tres")
-var rpgm = load("res://themes/rpgm.tres")
 var neon = load("res://themes/new_gui/neon.tres")
 var green = load("res://themes/green_theme.tres")
 var grey = load("res://themes/grey_theme.tres")
@@ -28,8 +27,6 @@ func _on_Yellow_pressed():
 	self.set_theme(yellow)
 func _on_Neon_pressed():
 	self.set_theme(neon)
-func _on_RPGM_pressed():
-	self.set_theme(rpgm)
 func _on_Alien_pressed():
 	self.set_theme(alien)
 func _on_Light_pressed():
@@ -40,7 +37,6 @@ func _on_Solarized_light_pressed():
 	self.set_theme(solarized_light)
 func _ready():
 	$GameUI/UIScaler/Menu/OptionsPage/TabContainer/Theme/VBoxContainer/Neon.connect("pressed", self, "_on_Neon_pressed")
-	$GameUI/UIScaler/Menu/OptionsPage/TabContainer/Theme/VBoxContainer/RPGM.connect("pressed", self, "on_RPGM_pressed")
 	$GameUI/UIScaler/Menu/OptionsPage/TabContainer/Theme/VBoxContainer/Alien.connect("pressed", self, "_on_Alien_pressed")
 	$GameUI/UIScaler/Menu/OptionsPage/TabContainer/Theme/VBoxContainer/Light.connect("pressed", self, "_on_Light_pressed")
 	$GameUI/UIScaler/Menu/OptionsPage/TabContainer/Theme/VBoxContainer/Solarized_dark.connect("pressed", self, "_on_Solarized_dark_pressed")

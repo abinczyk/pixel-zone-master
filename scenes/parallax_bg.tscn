@@ -21,7 +21,7 @@ motion_scale = Vector2( 0.2, 1 )
 motion_mirroring = Vector2( 800, 0 )
 
 [node name="Sprite" type="Sprite" parent="mount_ 2"]
-position = Vector2( 0, 601.437 )
+position = Vector2( 0, 396.405 )
 scale = Vector2( 1, 1.27686 )
 texture = ExtResource( 2 )
 centered = false
@@ -33,7 +33,7 @@ motion_scale = Vector2( 0.4, 1 )
 motion_mirroring = Vector2( 800, 0 )
 
 [node name="Sprite" type="Sprite" parent="mount_1"]
-position = Vector2( 10.125, 658.625 )
+position = Vector2( -6.96094, 436.508 )
 scale = Vector2( 1, 1.2373 )
 texture = ExtResource( 3 )
 centered = false

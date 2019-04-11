@@ -9,8 +9,6 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=8]
 
-
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 36.833, 53.9316 )
 
@@ -46,7 +44,6 @@ position = Vector2( -15.6748, 21.375 )
 shape = SubResource( 1 )
 
 [node name="coins" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="coin" parent="coins" instance=ExtResource( 7 )]
 position = Vector2( 1112.57, 477.731 )
@@ -119,6 +116,21 @@ position = Vector2( 8165.25, 1472.74 )
 
 [node name="enemy8" parent="enemies" instance=ExtResource( 8 )]
 position = Vector2( 8744.51, 1724.96 )
+
+[node name="enemy9" parent="enemies" instance=ExtResource( 8 )]
+position = Vector2( 7087.17, 477.687 )
+
+[node name="enemy10" parent="enemies" instance=ExtResource( 8 )]
+position = Vector2( 5310.24, 580.203 )
+
+[node name="enemy11" parent="enemies" instance=ExtResource( 8 )]
+position = Vector2( 4660.97, 631.461 )
+
+[node name="enemy12" parent="enemies" instance=ExtResource( 8 )]
+position = Vector2( 5173.55, 2288.8 )
+
+[node name="enemy13" parent="enemies" instance=ExtResource( 8 )]
+position = Vector2( 7138.43, 2322.97 )
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2( 4440.25, 2698.06 )

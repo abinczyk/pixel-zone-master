@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/power-ups/health/power-up_weapon.gd" type="Script" id=1]
+[ext_resource path="res://scripts/power-ups/health/power-up_health1.gd" type="Script" id=1]
 [ext_resource path="res://textures/power-ups/weapons/power-up_weapon.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
