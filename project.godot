@@ -36,6 +36,7 @@ background_load="*res://scenes/background_load.tscn"
 screenshot="*res://scripts/screenshot.gd"
 gamestate="*res://multiplayer-mode/gamestate.gd"
 save_load="*res://save_load.tscn"
+Achievements="*res://meta/achievements/AchievementsDictionary.gd"
 
 [compression]
 
