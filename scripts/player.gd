@@ -19,6 +19,7 @@ var anim=""
 onready var sprite = $sprite
 func _ready():
 	$"/root/game_health".points == 0
+	$ui/AnimationPlayer.play("saving_state")
 func _physics_process(delta):
 	if $ui/Control/ProgressBar.value == 0:
 		get_tree().change_scene("scenes/GameOver.tscn")
@@ -116,11 +117,14 @@ func _on_Area2D2_area_entered(area):
 		$ui/Control/ProgressBar.value -= 3
 func _on_stage2_normal_achieve1():
     $anim.play("achievement")
-    $ui/Control/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("First Level passed")
 func _on_Timer_timeout():
     $ui/Panel.hide()
 func set_player_name(new_name):
 	get_node("label").set_text(new_name)
+func save():
+	var node_data = {
+				"filename" : get_filename()
+	}
+	return node_data
 func _on_ice_cap1_achieve3():
 	$anim.play("achievement")
-	$ui/Control/GameUI/UIScaler/Menu/AchievementsPage/ItemList.add_item("So much Snow !!!")

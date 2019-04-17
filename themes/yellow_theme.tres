@@ -20,7 +20,7 @@
 [ext_resource path="res://themes/yellow/scroll_focus.tres" type="StyleBox" id=18]
 [ext_resource path="res://themes/yellow/tab_bg.tres" type="StyleBox" id=19]
 [ext_resource path="res://themes/yellow/tab_fg.tres" type="StyleBox" id=20]
-[ext_resource path="res://ubuntu-font-family/fonts/kenvector_future_14.tres" type="DynamicFont" id=21]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=21]
 [ext_resource path="res://themes/theme.gd" type="Script" id=22]
 
 [resource]

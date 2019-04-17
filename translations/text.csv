@@ -1,33 +1,33 @@
 ,en,es,de,pl,it,pt,fr
 KEY_APPLY,Apply,Aplicar,Einreichen,Zastosuj,Applicare,Aplique,Appliquer
-KEY_CONTROLS,"W/Up – Jump
-A/Left – Left
-D/Right – Right
-Space – Shoot
-Shift - Speed  ","W / Up – Salto
-A / Izquierda – Izquierda
-D / Derecha – Derecha
-Espacio – disparar
-Cambio – velocidad","W / Up – Jump
-A / Links – Links
-D / rechts – richtig
-Weltraum – schießen
-Shift - Geschwindigkeit","W/Up – Skok
-A/Left – Lewo
-D/Right – Prawo
+KEY_CONTROLS,"W/Up - Jump
+A/Left - Left
+D/Right - Right
+Space-  Shoot
+Shift - Speed  ","W / Up ?���� Salto
+A / Izquierda ?���� Izquierda
+D / Derecha ?���� Derecha
+Espacio ?���� disparar
+Cambio ?���� velocidad","W / Up ?���� Jump
+A / Links ?���� Links
+D / rechts ?���� richtig
+Weltraum ?���� schie?en
+Shift - Geschwindigkeit","W/Up - Skok
+A/Left - Lewo
+D/Right - Prawo
 Space – Strzał
-Shift - Przyspieszenie  ","W / Up – Salta
-A / Sinistra – Sinistra
-D / Destra – Destra
-Spazio – Spara
-Maiusc - Velocità","W / Up – Jump
-A / esquerda – esquerda
-D / Direita – Direita
-Espaço – Atirar
-Deslocamento – Velocidade","W / Up – Jump
-A / Gauche – Gauche
-D / Droite – Droite
-Space – Shoot
+Shift - Przyspieszenie  ","W / Up ?���� Salta
+A / Sinistra ?���� Sinistra
+D / Destra ?���� Destra
+Spazio ?���� Spara
+Maiusc - Velocit?","W / Up ?���� Jump
+A / esquerda ?���� esquerda
+D / Direita ?���� Direita
+Espaço ?���� Atirar
+Deslocamento ?���� Velocidade","W / Up ?���� Jump
+A / Gauche ?���� Gauche
+D / Droite ?���� Droite
+Space ?���� Shoot
 Shift - Vitesse"
 KEY_GRAPHICS,Graphics,Gráficos,Grafik,Grafika,Grafica,Gráficos,Graphique
 KEY_WINDOW_TYPE,Window Type,Tipo de ventana,Fenstertyp,Typ Okna,Tipo di finestra,Tipo de janela,Type de fenêtre
@@ -45,7 +45,7 @@ KEY_Options,Options,Opciones,Optionen,Opcje,Opzioni,Opções,Les options
 KEY_Stats,Stats,Estadísticas,Statistiken,Statystyki,Statistiche,Estatísticos,Statistiques
 KEY_Quit,Quit,Dejar,Verlassen,Wyjdź,Smettere,Sair,Quitter
 KEY_Play,Play,Jugar,Abspielen,Graj,Giocare,Toque,Jouer
-KEY_MODE1,Normal Mode,Modo normal,Normaler Modus,Tryb Normalny,Modalità normale,Modo normal,Mode normal
+KEY_MODE1,Normal Mode,Modo normal,Normaler Modus,Tryb Normalny,Modalit? normale,Modo normal,Mode normal
 KEY_TUT1,"Enter places like this,
 to go to the next levels","Entra en lugares como este,
 Para pasar a los siguientes niveles.","Orte wie diese eingeben,
@@ -63,85 +63,40 @@ KEY_ENEMIES,Killed Enemies,Enemigos muertos,Getötete Feinde,Pokonani przeciwnic
 KEY_COINS,Coins,Monedas,Münzen,Monety,Monete,Moedas,Pièces de monnaie
 KEY_THANKS,Thanks,Gracias,Vielen Dank,Dzięki,Grazie,Obrigado,Merci
 LANG_EN,English,Inglés,Englisch,Angielski,Inglese,Inglês,Anglais
-LANG_ES,Spanish,Español,Spanisch,Hiszpanski,Spagnolo,Espanhol,Espanol
+LANG_ES,Spanish,Español,Spanisch,Hiszpański,Spagnolo,Espanhol,Espanol
 LANG_DE,Deutsch,Deutsch,Deutsch,Niemiecki,Tedesco,Deutsch,Deutsch
 LANG_PL,Polish,Polaco,Polieren,Polski,Polacco,Polonês,Polonais
-LANG_IT,Italiano,Italiano,Italiano,Wloski,Italiano,Italiano,Italiano
+LANG_IT,Italiano,Italiano,Italiano,Włoski,Italiano,Italiano,Italiano
 LANG_PT,Portuguese,Portugués,Portugiesisch,Portugalski,Portoghese,Português,Portugues
-KEY_LANG,Language,Idioma,Sprache,Jezyk,Linguaggio,Língua,La langue
-KEY_G_A,Graphics & Audio,Gráficos y Audio,Grafik & Audio,Grafika i Audio,Grafica e audio,Gráficos e Áudio,Graphiques et audio
+KEY_LANG,Language,Idioma,Sprache,Język,Linguaggio,Língua,La langue
+KEY_G_A,Graphics & Audio,Gráficos y Audio,Grafik & Audio,Grafika i Audio,Grafica e audio,Gráficos e ?udio,Graphiques et audio
 KEY_CON_TAB,Controls,Controles,Steuerelemente,Sterowanie,Controlli,Controles,Les contrôles
 LANG_FR,French,Francés,Französisch,Francuski,Francese,Francês,Français
-KEY_LOADING,LOADING…,CARGANDO ...,WIRD GELADEN ...,LADOWANIE…,CARICAMENTO IN CORSO ...,CARREGANDO ...,CHARGEMENT ...
-KEY_CONTROLLER,Check controller settings,Verifique la configuración del controlador,Überprüfen Sie die Controller-Einstellungen,Sprawdz ustawienia kontrolera,Controlla le impostazioni del controller,Verifique as configurações do controlador,Vérifier les paramètres du contrôleur
-KEY_CHAR,Only this character is avaliable now ,Solo este personaje esta disponible ahora,Nur dieser Charakter ist jetzt verfügbar,Tylko ta postać jest teraz dostępna,Solo questo personaggio è disponibile ora,Apenas este personagem está disponível agora,Seul ce personnage est disponible maintenant
-KEY_DEVICE,Device,Dispositivo,Gerät,Urzadzenie,Dispositivo,Dispositivo,Dispositif
-KEY_Axis0,Axis 0,Eje 0,Achse 0,Os 0,Asse 0,Eixo 0,Axe 0
-KEY_Axis1,Axis 1,Eje 1,Achse 1,Os 1,Asse 1,Eixo 1,Axe 1
-KEY_Axis2,Axis 2,Eje 2,Achse 2,Os 2,Asse 2,Eixo 2,Axe 2
-KEY_Axis3,Axis 3,Eje 3,Achse 3,Os 3,Asse 3,Eixo 3,Axe 3
-KEY_Axis4,Axis 4,Eje 4,Achse 4,Os 4,Asse 4,Eixo 4,Axe 4
-KEY_Axis5,Axis 5,Eje 5,Achse 5,Os 5,Asse 5,Eixo 5,Axe 5
-KEY_Axis6,Axis 6,Eje 6,Achse 6,Os 6,Asse 6,Eixo 6,Axe 6
-KEY_Axis7,Axis 7,Eje 7,Achse 7,Os 7,Asse 7,Eixo 7,Axe 7
-KEY_Axis8,Axis 8,Eje 8,Achse 8,Os 8,Asse 8,Eixo 8,Axe 8
-KEY_Axis9,Axis 9,Eje 9,Achse 9,Os 9,Asse 9,Eixo 9,Axe 9
-KEY_Axis10,Axis 10,Eje 10,Achse 10,Os 10,Asse 10,Eixo 10,Axe 10
+KEY_CONTROLLER,Check controller settings,Verifique la configuración del controlador,?berprüfen Sie die Controller-Einstellungen,Sprawdź ustawienia kontrolera,Controlla le impostazioni del controller,Verifique as configurações do controlador,Vérifier les paramètres du contrôleur
+KEY_DEVICE,Device,Dispositivo,Gerät,Urz?dzenie,Dispositivo,Dispositivo,Dispositif
+KEY_Axis0,Axis 0,Eje 0,Achse 0,Oś 0,Asse 0,Eixo 0,Axe 0
+KEY_Axis1,Axis 1,Eje 1,Achse 1,Oś 1,Asse 1,Eixo 1,Axe 1
+KEY_Axis2,Axis 2,Eje 2,Achse 2,Oś 2,Asse 2,Eixo 2,Axe 2
+KEY_Axis3,Axis 3,Eje 3,Achse 3,Oś 3,Asse 3,Eixo 3,Axe 3
+KEY_Axis4,Axis 4,Eje 4,Achse 4,Oś 4,Asse 4,Eixo 4,Axe 4
+KEY_Axis5,Axis 5,Eje 5,Achse 5,Oś 5,Asse 5,Eixo 5,Axe 5
+KEY_Axis6,Axis 6,Eje 6,Achse 6,Oś 6,Asse 6,Eixo 6,Axe 6
+KEY_Axis7,Axis 7,Eje 7,Achse 7,Oś 7,Asse 7,Eixo 7,Axe 7
+KEY_Axis8,Axis 8,Eje 8,Achse 8,Oś 8,Asse 8,Eixo 8,Axe 8
+KEY_Axis9,Axis 9,Eje 9,Achse 9,Oś 9,Asse 9,Eixo 9,Axe 9
+KEY_Axis10,Axis 10,Eje 10,Achse 10,Oś 10,Asse 10,Eixo 10,Axe 10
 KEY_Buttons,Buttons:,Botones:,Tasten:,Przyciski:,Pulsanti:,Botões:,Boutons:
-KEY_WIB_1,Vibration Weak Motor,Motor de vibración débil,Vibrationsschwacher Motor,Wibracja slabego silnika,Motore debole di vibrazione,Motor fraco de vibração,Moteur faible vibration
-KEY_WIB_2,Vibration Strong Motor,Motor fuerte vibracion,Vibrationsstarker Motor,Wibracja silnego silnika,Vibrazione forte motore,Motor forte de vibração,Moteur puissant de vibration
-KEY_WIB_3,Vibration Duration,Duración de la vibración,Vibrationsdauer,Dlugosc wibracji,Durata delle vibrazioni,Duração da vibração,Durée de vibration
+KEY_WIB_3,Vibration Duration,Duración de la vibración,Vibrationsdauer,Długość wibracji,Durata delle vibrazioni,Duração da vibração,Durée de vibration
 KEY_WIB_START,Start Vibration,Iniciar vibración,Vibration starten,Rozpocznij wibracje,Inizia la vibrazione,Comece a vibração,Démarrer les vibrations
 KEY_WIB_STOP,Stop Vibration,Detener la vibración,Vibrationsstopp,Zatrzymaj wibracje,Fermare le vibrazioni,Pare a vibração,Arrêter les vibrations
-KEY_INFO,"To enter the Multiplayer mode, an internet connection is required. How to configure multiplayer mode? It's easy:
-
-1. If you want to be a server administrator*, you must enter its IP address. It is necessary for other players who want to play on your server to play on it, not on another server.
-2. Your nickname.Your nickname is displayed above your character.
-
-*THINK ABOUT THIS DECISION BECAUSE THE SERVER ADMINISTRATOR IS ONLY CAN START IT !!!","Para entrar en el modo multijugador, se requiere una conexión a internet. ¿Cómo configurar el modo multijugador? Es fácil:
-
-1. Si desea ser un administrador del servidor *, debe ingresar su dirección IP. Es necesario que otros jugadores que quieran jugar en su servidor jueguen en él, no en otro servidor.
-2. Tu apodo. Tu apodo se muestra sobre tu personaje. 
-
-* ¡PIENSE EN ESTA DECISIÓN PORQUE EL ADMINISTRADOR DEL SERVIDOR ES SOLO PUEDE INICIARLO!","Um in den Multiplayer-Modus zu gelangen, ist eine Internetverbindung erforderlich. Wie konfiguriere ich den Multiplayer-Modus? Es ist einfach:
-
-1. Wenn Sie Serveradministrator * sein möchten, müssen Sie seine IP-Adresse eingeben. Andere Spieler, die auf Ihrem Server spielen möchten, müssen darauf spielen, nicht auf einem anderen Server.
-2. Dein Nickname. Dein Nickname wird über deinem Charakter angezeigt.
-
-* ÜBER DIESE ENTSCHEIDUNG DENKEN, WEIL DER SERVER-ADMINISTRATOR NUR ES STARTEN KANN !!!","Aby wejść w tryb wieloosobowy, wymagane jest połączenie internetowe. Jak skonfigurować tryb dla wielu graczy? To łatwe:
-
-1. Jeśli chcesz być administratorem serwera *, musisz wprowadzić jego adres IP. Jest to konieczne dla innych graczy, którzy chcą grać na twoim serwerze, aby grać na nim, a nie na innym serwerze.
-2. Twój pseudonim. Twój pseudonim jest wyświetlany nad Twoją postacią.
-
-* ZASTANOW SIE NAD TA DECYZJA, PONIEWAŻ TYLKO ADMINISTRATOR SERWERA MOZE GO URUCHOMIC!!!","Per accedere alla modalità multigiocatore, è necessaria una connessione internet. Come configurare la modalità multiplayer? È facile:
-
-1. Se vuoi essere un amministratore del server *, devi inserire il suo indirizzo IP. È necessario per gli altri giocatori che vogliono giocare sul tuo server per giocare su di esso, non su un altro server.
-2. Il tuo nickname. Il tuo nickname è visualizzato sopra il tuo personaggio. 
-
-* PENSA A QUESTA DECISIONE PERCHÉ IL SERVER AMMINISTRATORE PUO 'INIZIARE SOLO !!!","Para entrar no modo Multiplayer, é necessária uma conexão com a internet. Como configurar o modo multiplayer? É fácil:
-
-1. Se você deseja ser um administrador do servidor *, você deve inserir seu endereço IP. É necessário que outros jogadores que querem jogar no seu servidor joguem nele, não em outro servidor.
-2. Seu apelido. Seu apelido é exibido acima do seu personagem.
-
-*PENSE NESTA DECISÃO PORQUE O ADMINISTRADOR DE SERVIDOR SÓ PODE COMEÇÁ-LO !!!","Pour entrer en mode multijoueur, une connexion Internet est requise. Comment configurer le mode multijoueur? C'est facile: 
-
-1. Si vous souhaitez être administrateur de serveur *, vous devez entrer son adresse IP. Il est nécessaire que les autres joueurs souhaitant jouer sur votre serveur y jouent, et non sur un autre serveur.
-2. Votre pseudo. Votre pseudo est affiché au dessus de votre personnage.
-
-* PENSEZ À CETTE DÉCISION PARCE QUE L’ADMINISTRATEUR DE SERVEUR NE PEUT LE COMMENCER !!!"
-KEY_MULTI,Multiplayer Mode,Modo multijugador,Mehrspielermodus,Tryb Wieloosobowy,Modalità multigiocatore,Modo multijogador,Mode multijoueur
-KEY_HOST,Host,Anfitrión,Wirt,Hostuj,Ospite,Hospedeiro,Hôte
-KEY_JOIN,Join,Unirse,Beitreten,Dolacz,Aderire,Junte-se,Joindre
-KEY_NAME,Name:,Nombre:,Name:,Imie:,Nome:,Nome:,Prénom:
-KEY_A_P,Awaiting Players...,Esperando jugadores ...,Spieler werden erwartet ...,Oczekujacy Gracze…,In attesa di giocatori ...,Aguardando jogadores ...,Joueurs en attente ...
-KEY_START,START!,¡COMIENZO!,START!,START!,INIZIO!,COMEÇAR!,DÉBUT!
-KEY_ACH_YOU,Your Achievements,Sus logros,Deine Erfolge,Twoje Osiagniecia,I tuoi obiettivi,Suas conquistas,Vos réalisations
-KEY_ACH_BACK,Back To Game,Volver al juego,Zurück zum Spiel,Wroc Do Gry,Ritorno al gioco,De volta ao jogo,Retour au jeu
+KEY_START,START!,¡COMIENZO!,START!,START!,INIZIO!,COME?AR!,D?BUT!
+KEY_ACH_YOU,Your Achievements,Sus logros,Deine Erfolge,Twoje Osiągniecia,I tuoi obiettivi,Suas conquistas,Vos réalisations
+KEY_ACH_BACK,Back To Game,Volver al juego,Zurück zum Spiel,Wróć do gry,Ritorno al gioco,De volta ao jogo,Retour au jeu
 KEY_ACH,Achievements,Logros,Erfolge,Osiagniecia,realizzazioni,Conquistas,Réalisations
-KEY_DLCS,Show list of installed DLCs,Mostrar lista de DLC instalados,Liste der installierten DLCs anzeigen,Pokaz liste zainstalowanych dodatkow,Mostra l'elenco dei DLC installati,Mostrar lista de DLCs instalados,Afficher la liste des DLC installés
-KEY_REPORT_BUG,Report a bug,Reportar un error,Melde einen technischen Fehler,Zglos problem,Segnalare un bug,Reportar um erro,Signaler un bug
+KEY_DLCS,Show list of installed DLCs,Mostrar lista de DLC instalados,Liste der installierten DLCs anzeigen,Pokaż listę zainstalowanych dodatków,Mostra l'elenco dei DLC installati,Mostrar lista de DLCs instalados,Afficher la liste des DLC installés
+KEY_REPORT_BUG,Report a bug,Reportar un error,Melde einen technischen Fehler,Zgłoś problem,Segnalare un bug,Reportar um erro,Signaler un bug
 KEY_THEME,Theme,Tema,Thema,Motyw,Tema,Tema,Thème
-KEY_Yellow,Yellow,Amarillo,Gelb,Zolty,Giallo,Amarelo,Jaune
+KEY_Yellow,Yellow,Amarillo,Gelb,Żółty,Giallo,Amarelo,Jaune
 KEY_Grey,Grey,Gris,Grau,Szary,Grigio,Cinzento,Gris
 KEY_Red,Red,Rojo,rot,Czerwony,Rosso,Vermelho,Rouge
 KEY_Green,Green,Verde,Grün,Zielony,Verde,Verde,Vert
@@ -154,4 +109,53 @@ KEY_Alien,Alien,Extraterrestre,Ausländer,Obcy,Alieno,Estrangeiro,Extraterrestre
 KEY_Light,Light,Brillante,Hell,Jasny,Luminoso,Brilhante,Brillant
 KEY_Solarized_dark,Solarized Dark,Oscuridad solarizada,Solarized Dark,Solaryzowany Ciemny,Solarized Dark,Escuro Solarizado,Dark Solarized
 KEY_Solarized_light,Solarized Light,Luz solarizada,Solarisiertes Licht,Solaryzowany Jasny,Solarized Bright,Brilhante Solarizado,Lumineux Solarisé
-KEY_FULL_HEALTH,Full Health,Salud completa,Volle Gesundheit,Pelne Zdrowie,Piena salute,Saúde Máxima,Pleine santé
+KEY_FULL_HEALTH,Full Health,Salud completa,Volle Gesundheit,Pełne Zdrowie,Piena salute,Saúde Máxima,Pleine santé
+KEY_Continue,Continue,Continuar,Fortsetzen,Kontynuuj,Continua,Continuar,Continuer
+KEY_Licenses,Licenses,Licencias,Lizenzen,Licencje,Licenze,Licenças,Les licences
+KEY_AUTOSAVE_NOT,"This game uses the autosave function.
+The files are saved on the disk and the removal
+of one of them may result in a loss of
+The game's state
+
+Do not turn off the game,
+While this icon is visible","Este juego utiliza la función de guardado automático.
+Los archivos se guardan en el disco y la
+eliminación de uno de ellos puede
+Provocar la pérdida del estado del juego.
+
+
+No apague el juego cuando este icono est? visible","Dieses Spiel verwendet die automatische Speicherfunktion.
+Die Dateien werden auf der Festplatte gespeichert.
+Wenn Sie eine davon entfernen, kann der Status des Spiels verloren gehen.
+
+
+Schalten Sie das Spiel nicht aus,
+wenn dieses Symbol sichtbar ist","Ta gra używa funkcji autozapisu.
+Pliki zapisywane są na dysku i
+usunięcie chociaż jednego z nich może zaskutkować
+Utratą zapisu stanu gry
+
+
+Nie wyłączaj gry,
+Gdy ta ikona jest widoczna","Questo gioco utilizza la funzione di salvataggio automatico.
+I file vengono salvati sul disco e la rimozione
+di uno di essi può comportare la
+perdita dello stato del gioco
+
+
+Non spegnere il gioco
+Uando questa icona ? visibile","Este jogo usa a função de salvamento automático.
+Os arquivos são salvos no disco e a remoção
+de um deles pode resultar na
+Perda do estado do jogo
+
+
+N?o desligue o jogo quando
+Este ?cone estiver vis?vel","Ce jeu utilise la fonction de sauvegarde automatique.
+Les fichiers sont enregistrés sur le disque et la suppression de
+l?����un d?����entre eux peut entraîner une perte de
+l?����état du jeu.
+
+
+Ne pas ?teindre le jeu
+Quand cette ic?ne est visible"

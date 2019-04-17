@@ -185,7 +185,6 @@ position = Vector2( 310.5, 127.5 )
 scale = Vector2( 0.5, 1 )
 shape = SubResource( 3 )
 
-[connection signal="achieve3" from="." to="player" method="_on_ice_cap1_achieve3"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]

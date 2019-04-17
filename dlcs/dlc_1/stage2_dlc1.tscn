@@ -159,13 +159,6 @@ position = Vector2( 4031.07, 2615.49 )
 position = Vector2( 4132.32, 2622.24 )
 
 [node name="enemies" type="Node" parent="."]
-editor/display_folded = true
-
-[node name="enemy 5" parent="enemies" instance=ExtResource( 5 )]
-position = Vector2( 734.693, 1064.22 )
-
-[node name="enemy 7" parent="enemies" instance=ExtResource( 5 )]
-position = Vector2( 1125.21, 1053.06 )
 
 [node name="enemy 9" parent="enemies" instance=ExtResource( 5 )]
 position = Vector2( 968.927, 766.466 )

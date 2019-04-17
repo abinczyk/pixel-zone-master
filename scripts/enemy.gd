@@ -3,11 +3,11 @@ extends KinematicBody2D
 
 const GRAVITY_VEC = Vector2(0, 900)
 const FLOOR_NORMAL = Vector2(0, -1)
-
+const BULLET_VELOCITY = 1000
 const WALK_SPEED = 70
 const STATE_WALKING = 0
 const STATE_KILLED = 1
-
+var shoot_time=99999
 var linear_velocity = Vector2()
 var direction = -1
 var anim=""

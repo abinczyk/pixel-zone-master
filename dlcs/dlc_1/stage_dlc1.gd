@@ -18,5 +18,12 @@ func save():
 
 
 func _on_nextlevel_body_entered(body):
-    if body.name == "player":
-        get_tree().change_scene("user://dlc_1/stage2_dlc1.tscn")
+	if body.name == "player":
+		get_tree().change_scene("user://dlc_1/stage2_dlc1.tscn")
+	var a = File.new()
+	a.open("user://1_dlc1.save", File.WRITE)
+	var save_nodes = get_tree().get_nodes_in_group("Persist")
+	for i in save_nodes:
+		var node_data = i.call("save");
+		a.store_line(to_json(node_data))
+	a.close()

@@ -16,7 +16,7 @@ extents = Vector2( 1797.06, 10 )
 extents = Vector2( 63.8539, 26.1462 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 175.815, 73.8463 )
+extents = Vector2( 405.763, 73.8463 )
 
 [node name="stage2_normal" type="Node"]
 script = ExtResource( 1 )
@@ -157,13 +157,6 @@ position = Vector2( 4031.07, 2615.49 )
 position = Vector2( 4132.32, 2622.24 )
 
 [node name="enemies" type="Node" parent="."]
-editor/display_folded = true
-
-[node name="enemy 5" parent="enemies" instance=ExtResource( 5 )]
-position = Vector2( 734.693, 1064.22 )
-
-[node name="enemy 7" parent="enemies" instance=ExtResource( 5 )]
-position = Vector2( 1125.21, 1053.06 )
 
 [node name="enemy 9" parent="enemies" instance=ExtResource( 5 )]
 position = Vector2( 968.927, 766.466 )
@@ -249,10 +242,9 @@ one_way_collision = true
 position = Vector2( 258.188, 569.532 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 22.7812, 129.094 )
+position = Vector2( 273.375, 106.313 )
 shape = SubResource( 3 )
 
-[connection signal="achieve1" from="." to="player" method="_on_stage2_normal_achieve1"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="nextlevel" to="." method="_on_nextlevel_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

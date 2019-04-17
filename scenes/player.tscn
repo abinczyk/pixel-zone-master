@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=2]
@@ -15,9 +15,11 @@
 [ext_resource path="res://textures/osb_jump.png" type="Texture" id=13]
 [ext_resource path="res://textures/osb_fire.png" type="Texture" id=14]
 [ext_resource path="res://scenes/GameUI.tscn" type="PackedScene" id=15]
-[ext_resource path="res://animations/full_health.tres" type="Animation" id=16]
-[ext_resource path="res://animations/loaded_level.tres" type="Animation" id=17]
-[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=18]
+[ext_resource path="res://textures/saving.png" type="Texture" id=16]
+[ext_resource path="res://animations/full_health.tres" type="Animation" id=17]
+[ext_resource path="res://animations/loaded_level.tres" type="Animation" id=18]
+[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=19]
+[ext_resource path="res://animations/saving_state.tres" type="Animation" id=20]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 5.81836
@@ -238,7 +240,6 @@ shape = SubResource( 1 )
 [node name="sprite" parent="." instance=ExtResource( 3 )]
 
 [node name="anim" type="AnimationPlayer" parent="."]
-playback_speed = 1.4
 anims/achievement = ExtResource( 4 )
 anims/crouch = SubResource( 2 )
 anims/falling = SubResource( 3 )
@@ -353,11 +354,20 @@ custom_fonts/font = ExtResource( 2 )
 text = "Start!"
 align = 1
 
+[node name="Sprite" type="Sprite" parent="ui"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 996.938, 572.063 )
+rotation = 18.8496
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 16 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ui"]
 pause_mode = 2
-anims/full_health = ExtResource( 16 )
-anims/loaded_level = ExtResource( 17 )
-anims/next_level = ExtResource( 18 )
+anims/full_health = ExtResource( 17 )
+anims/loaded_level = ExtResource( 18 )
+anims/next_level = ExtResource( 19 )
+anims/saving_state = ExtResource( 20 )
 anims/start = SubResource( 12 )
 
 [node name="ColorRect" type="ColorRect" parent="ui"]

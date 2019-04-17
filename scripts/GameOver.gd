@@ -14,7 +14,6 @@ func _ready():
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("scenes/Main Menu/GUI.tscn")
-
+	background_load.load_scene("scenes/Main Menu/GUI.tscn")
 func _on_Button_pressed():
 	get_tree().quit()

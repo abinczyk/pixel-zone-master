@@ -265,8 +265,10 @@ position = Vector2( 1039.29, 409.746 )
 [node name="one_way_platform12" parent="props" instance=ExtResource( 6 )]
 position = Vector2( 1187.79, 281.496 )
 
-[node name="player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 245.641, 624.921 )
+[node name="player" parent="." groups=[
+"Persist",
+] instance=ExtResource( 7 )]
+position = Vector2( 7022.64, 2238.17 )
 
 [node name="parallax_bg" parent="." instance=ExtResource( 8 )]
 

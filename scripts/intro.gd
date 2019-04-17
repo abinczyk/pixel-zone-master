@@ -1,16 +1,13 @@
 extends Control
-func _ready():
-	get_node("/root/game_level").points == 0
-	get_node("/root/game_level_no_enemies").points == 0
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 
-func _on_Timer_timeout():
-	get_tree().change_scene("scenes/MainMenu.tscn")
+func _on_window_size_changeds(prev, now):
+	rect_size = now
+	$Viewport.size = now
+func _on_AnimationPlayer_animation_finished(intro_new):
+	get_tree().change_scene("res://scenes/AutoSaveNotification.tscn")
+	
+
+func _on_Skip_pressed():
+	$AnimationPlayer.stop()
+	get_tree().change_scene("res://scenes/AutoSaveNotification.tscn")
