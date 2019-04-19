@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scripts/scenes/levels/pixel_adventure/stage.gd" type="Script" id=1]
 [ext_resource path="res://titles/pixel_adventure.tres" type="TileSet" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=9]
 [ext_resource path="res://sounds/music.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scenes/next_level.tscn" type="PackedScene" id=11]
+[ext_resource path="res://dlcs/dlc_2/Untitled Song 2.ogg" type="AudioStream" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 49.9733, 10 )
@@ -160,6 +161,7 @@ position = Vector2( 4236.75, 541.058 )
 position = Vector2( 4172.75, 541.058 )
 
 [node name="enemies" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="enemy" parent="enemies" instance=ExtResource( 4 )]
 position = Vector2( 513, 675.001 )
@@ -198,6 +200,7 @@ position = Vector2( 6726.38, 2261.25 )
 position = Vector2( 4164.75, 276.75 )
 
 [node name="props" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="moving_platform" parent="props" instance=ExtResource( 5 )]
 position = Vector2( 1451.86, 742.969 )
@@ -268,7 +271,7 @@ position = Vector2( 1187.79, 281.496 )
 [node name="player" parent="." groups=[
 "Persist",
 ] instance=ExtResource( 7 )]
-position = Vector2( 7022.64, 2238.17 )
+position = Vector2( 279.383, 495.403 )
 
 [node name="parallax_bg" parent="." instance=ExtResource( 8 )]
 
@@ -306,6 +309,9 @@ shape = SubResource( 2 )
 
 [node name="next_level" parent="." instance=ExtResource( 11 )]
 position = Vector2( 7119.09, 2270.82 )
+
+[node name="music2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
 
 [connection signal="body_entered" from="nextlevel" to="." method="_on_nextlevel_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

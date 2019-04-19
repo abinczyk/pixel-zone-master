@@ -1,5 +1,12 @@
 extends Node
-
+func _ready():
+	var dlc = File.new()
+	if dlc.file_exists("user://dlc_2/Untitled Song 2.ogg"):
+		$music.stop()
+		$music2.play()
+	if not dlc.file_exists("user://dlc_2/Untitled Song 2.ogg"):
+		$music.play()
+		$music2.stop()
 func _on_Area2D2_body_entered(body):
 	if body.name == "player":
 		get_tree().change_scene("scenes/GameOver.tscn")

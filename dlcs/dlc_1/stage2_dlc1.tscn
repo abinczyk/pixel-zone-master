@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://dlcs/dlc_1/stage2_dlc1.gd" type="Script" id=1]
 [ext_resource path="res://titles/pixel_adventure.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scenes/next_level.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/power-ups/health/power-up_health1.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/power-ups/health/power-up_heath2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://dlcs/dlc_2/Untitled Song 2.ogg" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1797.06, 10 )
@@ -159,6 +160,7 @@ position = Vector2( 4031.07, 2615.49 )
 position = Vector2( 4132.32, 2622.24 )
 
 [node name="enemies" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="enemy 9" parent="enemies" instance=ExtResource( 5 )]
 position = Vector2( 968.927, 766.466 )
@@ -258,6 +260,9 @@ position = Vector2( 5361.19, 2450.25 )
 
 [node name="power-up_weapon4" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3117.24, 1311.19 )
+
+[node name="music2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
 
 [connection signal="achieve1" from="." to="player" method="_on_stage2_normal_achieve1"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

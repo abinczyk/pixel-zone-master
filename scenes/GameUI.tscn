@@ -89,7 +89,7 @@ flat = true
 
 [node name="Return" type="Button" parent="UIScaler/Menu/HBoxContainer"]
 margin_right = 230.0
-margin_bottom = 84.0
+margin_bottom = 101.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
@@ -97,23 +97,10 @@ custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "KEY_Return"
 flat = true
 
-[node name="Load" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 88.0
-margin_right = 230.0
-margin_bottom = 172.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
-custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
-toggle_mode = true
-group = SubResource( 1 )
-text = "KEY_Load"
-flat = true
-
 [node name="Options" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 176.0
+margin_top = 105.0
 margin_right = 230.0
-margin_bottom = 260.0
+margin_bottom = 206.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
@@ -124,9 +111,9 @@ text = "KEY_Options"
 flat = true
 
 [node name="Stats" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 264.0
+margin_top = 210.0
 margin_right = 230.0
-margin_bottom = 348.0
+margin_bottom = 311.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
@@ -137,9 +124,9 @@ text = "KEY_Stats"
 flat = true
 
 [node name="Quit" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 352.0
+margin_top = 315.0
 margin_right = 230.0
-margin_bottom = 436.0
+margin_bottom = 416.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 7 )
@@ -150,7 +137,7 @@ text = "KEY_Quit"
 flat = true
 
 [node name="Achievements" type="Button" parent="UIScaler/Menu/HBoxContainer"]
-margin_top = 440.0
+margin_top = 420.0
 margin_right = 230.0
 margin_bottom = 525.0
 size_flags_horizontal = 3
@@ -176,7 +163,6 @@ script = ExtResource( 9 )
 id = "Menu"
 
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Return" to="UIScaler/Menu" method="_on_Return_pressed"]
-[connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Load" to="UIScaler/Menu" method="_on_Load_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Options" to="UIScaler/Menu" method="_on_Options_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Stats" to="UIScaler/Menu" method="_on_Stats_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Quit" to="UIScaler/Menu" method="_on_Quit_pressed"]

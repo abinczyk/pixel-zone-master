@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/scenes/levels/ice_cap_adventure/ice_01.gd" type="Script" id=1]
 [ext_resource path="res://titles/tiles_all.tres" type="TileSet" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scenes/next_level.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://dlcs/dlc_2/Drum & Bass.ogg" type="AudioStream" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 36.833, 53.9316 )
@@ -29,7 +30,7 @@ tile_data = PoolIntArray( 393216, 69, 0, 393217, 536870982, 0, 393218, 536870982
 [node name="player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 119.871, 82.091 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+[node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
 bus = "Music"
@@ -184,6 +185,9 @@ shape = SubResource( 2 )
 position = Vector2( 310.5, 127.5 )
 scale = Vector2( 0.5, 1 )
 shape = SubResource( 3 )
+
+[node name="music2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

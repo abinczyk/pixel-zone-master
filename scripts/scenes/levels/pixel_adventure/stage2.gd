@@ -1,6 +1,13 @@
 extends Node
 signal achieve1
-
+func _ready():
+	var dlc = File.new()
+	if dlc.file_exists("user://dlc_2/Untitled Song 2.ogg"):
+		$music.stop()
+		$music2.play()
+	if not dlc.file_exists("user://dlc_2/Untitled Song 2.ogg"):
+		$music.play()
+		$music2.stop()
 
 
 

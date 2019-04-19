@@ -10,6 +10,7 @@ const BULLET_VELOCITY = 1000
 const SHOOT_TIME_SHOW_WEAPON = 0.2
 var linear_vel = Vector2()
 var onair_time = 0 #
+var teleport_destination
 var on_floor = false
 var shoot_time=99999 #time since last shot
 var default_weapon = preload("res://scenes/bullet.tscn").instance()
@@ -17,12 +18,14 @@ var weapon_current = default_weapon
 var weapon_up = preload("res://scenes/bullet_modified.tscn").instance()
 var anim=""
 onready var sprite = $sprite
+onready var respawn_position
 func _ready():
+	respawn_position = position
 	$"/root/game_health".points == 0
 	$ui/AnimationPlayer.play("saving_state")
 func _physics_process(delta):
 	if $ui/Control/ProgressBar.value == 0:
-		get_tree().change_scene("scenes/GameOver.tscn")
+		get_tree().chamge_scene("scenes/GameOver.tscn")
 	onair_time += delta
 	shoot_time += delta
 
@@ -128,3 +131,17 @@ func save():
 	return node_data
 func _on_ice_cap1_achieve3():
 	$anim.play("achievement")
+func dd():
+	$ui/Control/ProgressBar.value -= 70
+func set_respawn(p):
+	respawn_position = p
+func teleport(destination):
+	teleport_destination = destination
+	$ui/Control/ProgressBar.set_value(100)
+	$anim2.play("respawn")
+
+func do_teleport():
+	position = teleport_destination
+
+func respawn():
+	teleport(respawn_position)

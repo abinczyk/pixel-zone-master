@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://dlcs/dlc_1/ice_01_dlc1.gd" type="Script" id=1]
 [ext_resource path="res://titles/tiles_all.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/power-ups/health/power-up_health1.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/power-ups/health/power-up_heath2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://dlcs/dlc_2/Drum & Bass.ogg" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 36.833, 53.9316 )
@@ -31,7 +32,7 @@ tile_data = PoolIntArray( 393216, 69, 0, 393217, 536870982, 0, 393218, 536870982
 [node name="player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 119.871, 82.091 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+[node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
 bus = "Music"
@@ -199,6 +200,9 @@ position = Vector2( 4442.35, 1344.09 )
 
 [node name="power-up_weapon3" parent="." instance=ExtResource( 10 )]
 position = Vector2( 5300.44, 2035.13 )
+
+[node name="music2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
 
 [connection signal="achieve3" from="." to="player" method="_on_ice_cap1_achieve3"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
