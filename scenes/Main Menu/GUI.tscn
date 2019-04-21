@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/Main Menu/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://textures/background.png" type="Texture" id=2]
-[ext_resource path="res://themes/theme_test.tres" type="Theme" id=3]
-[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=4]
+[ext_resource path="res://dlcs/dlc_3/char.tscn" type="PackedScene" id=3]
+[ext_resource path="res://themes/theme_test.tres" type="Theme" id=4]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=5]
 
 [node name="GUI" type="Control"]
 anchor_right = 1.0
@@ -22,6 +23,14 @@ margin_top = -8.0
 texture = ExtResource( 2 )
 expand = true
 
+[node name="WindowDialog2" type="WindowDialog" parent="TextureRect"]
+visible = true
+margin_right = 410.0
+margin_bottom = 312.0
+window_title = "Select Your Character"
+
+[node name="char" parent="TextureRect/WindowDialog2" instance=ExtResource( 3 )]
+
 [node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -35,8 +44,8 @@ margin_bottom = 112.0
 [node name="Play5" type="Button" parent="TextureRect/VBoxContainer"]
 margin_right = 509.0
 margin_bottom = 39.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "KEY_Play"
 flat = true
 
@@ -44,8 +53,8 @@ flat = true
 margin_top = 43.0
 margin_right = 509.0
 margin_bottom = 82.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "KEY_Continue"
 flat = true
 
@@ -53,8 +62,8 @@ flat = true
 margin_top = 86.0
 margin_right = 509.0
 margin_bottom = 125.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "KEY_DLCS"
 flat = true
 
@@ -62,8 +71,8 @@ flat = true
 margin_top = 129.0
 margin_right = 509.0
 margin_bottom = 168.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "KEY_REPORT_BUG"
 flat = true
 
@@ -71,8 +80,8 @@ flat = true
 margin_top = 172.0
 margin_right = 509.0
 margin_bottom = 211.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "KEY_Licenses"
 flat = true
 
@@ -80,8 +89,8 @@ flat = true
 margin_top = 215.0
 margin_right = 509.0
 margin_bottom = 254.0
-theme = ExtResource( 3 )
-custom_fonts/font = ExtResource( 4 )
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "KEY_Quit"
 flat = true
 
@@ -94,7 +103,7 @@ margin_left = -140.5
 margin_top = -170.0
 margin_right = 139.5
 margin_bottom = 170.0
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 
 [node name="ItemList" type="ItemList" parent="TextureRect/WindowDialog"]
 anchor_right = 1.0
@@ -109,7 +118,7 @@ margin_left = -140.0
 margin_top = -170.0
 margin_right = 140.0
 margin_bottom = 170.0
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 
 [node name="Label" type="RichTextLabel" parent="TextureRect/PixelZoneLicense"]
 anchor_right = 1.0
@@ -195,7 +204,7 @@ margin_left = -140.0
 margin_top = -170.0
 margin_right = 140.0
 margin_bottom = 170.0
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 
 [node name="Label" type="RichTextLabel" parent="TextureRect/GodotEngineLicense"]
 anchor_right = 1.0
@@ -311,7 +320,7 @@ margin_left = -140.0
 margin_top = -170.0
 margin_right = 140.0
 margin_bottom = 170.0
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 
 [node name="Label" type="RichTextLabel" parent="TextureRect/MITLicense"]
 anchor_right = 1.0
@@ -373,14 +382,14 @@ margin_left = -140.0
 margin_top = -170.0
 margin_right = 201.0
 margin_bottom = 170.0
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 popup_exclusive = true
 
 [node name="Label" type="Label" parent="TextureRect/LicenseSelector"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 92.0
-theme = ExtResource( 3 )
+theme = ExtResource( 4 )
 text = "
 Choose the license,
 you would like to see
@@ -399,14 +408,14 @@ margin_bottom = 3.375
 [node name="PP" type="Button" parent="TextureRect/LicenseSelector/VBoxContainer"]
 margin_right = 341.0
 margin_bottom = 39.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "Privacy Policy"
 
 [node name="License" type="Button" parent="TextureRect/LicenseSelector/VBoxContainer"]
 margin_top = 43.0
 margin_right = 341.0
 margin_bottom = 82.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "Pixel Zone License"
 
 [node name="Label" type="Label" parent="."]

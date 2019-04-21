@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://dlcs/dlc_3/char.gd" type="Script" id=1]
+[ext_resource path="res://textures/robot_demo.png" type="Texture" id=2]
 
 [node name="char" type="Control"]
 anchor_right = 1.0
@@ -22,16 +23,38 @@ margin_right = 129.0
 margin_bottom = 20.0
 alignment = 1
 
-[node name="character1" type="Button" parent="Panel/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer"]
 margin_right = 127.0
 margin_bottom = 40.0
+
+[node name="character1" type="Button" parent="Panel/HBoxContainer/VBoxContainer"]
+margin_right = 127.0
+margin_bottom = 20.0
 text = "Select Character 1"
 
-[node name="character2" type="Button" parent="Panel/HBoxContainer"]
+[node name="Sprite2" type="Sprite" parent="Panel/HBoxContainer/VBoxContainer"]
+position = Vector2( 194, 52.5 )
+texture = ExtResource( 2 )
+vframes = 2
+hframes = 16
+frame = 16
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/HBoxContainer"]
 margin_left = 131.0
 margin_right = 258.0
 margin_bottom = 40.0
-text = "select Character 2"
 
-[connection signal="pressed" from="Panel/HBoxContainer/character1" to="." method="_on_character1_pressed"]
-[connection signal="pressed" from="Panel/HBoxContainer/character2" to="." method="_on_character2_pressed"]
+[node name="character2" type="Button" parent="Panel/HBoxContainer/VBoxContainer2"]
+margin_right = 127.0
+margin_bottom = 20.0
+text = "Select Character 2"
+
+[node name="Sprite" type="Sprite" parent="Panel/HBoxContainer/VBoxContainer2"]
+position = Vector2( -67.4999, 51 )
+texture = ExtResource( 2 )
+vframes = 2
+hframes = 16
+frame = 16
+
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/character1" to="." method="_on_character1_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer2/character2" to="." method="_on_character2_pressed"]

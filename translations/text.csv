@@ -4,30 +4,30 @@ KEY_CONTROLS,"W/Up - Jump
 A/Left - Left
 D/Right - Right
 Space-  Shoot
-Shift - Speed  ","W / Up ?���� Salto
-A / Izquierda ?���� Izquierda
-D / Derecha ?���� Derecha
-Espacio ?���� disparar
-Cambio ?���� velocidad","W / Up ?���� Jump
-A / Links ?���� Links
-D / rechts ?���� richtig
-Weltraum ?���� schie?en
+Shift - Speed  ","W / Up - Salto
+A / Izquierda - Izquierda
+D / Derecha - Derecha
+Espacio - disparar
+Cambio - velocidad","W / Up - Jump
+A / Links - Links
+D / rechts - richtig
+Weltraum – schieen
 Shift - Geschwindigkeit","W/Up - Skok
 A/Left - Lewo
 D/Right - Prawo
 Space – Strzał
-Shift - Przyspieszenie  ","W / Up ?���� Salta
-A / Sinistra ?���� Sinistra
-D / Destra ?���� Destra
-Spazio ?���� Spara
-Maiusc - Velocit?","W / Up ?���� Jump
-A / esquerda ?���� esquerda
-D / Direita ?���� Direita
-Espaço ?���� Atirar
-Deslocamento ?���� Velocidade","W / Up ?���� Jump
-A / Gauche ?���� Gauche
-D / Droite ?���� Droite
-Space ?���� Shoot
+Shift - Przyspieszenie  ","W / Up - Salta
+A / Sinistra - Sinistra
+D / Destra - Destra
+Spazio - Spara
+Maiusc - Velocit?","W / Up - Jump
+A / esquerda - esquerda
+D / Direita - Direita
+Espaço - Atirar
+Deslocamento - Velocidade","W / Up - Jump
+A / Gauche - Gauche
+D / Droite - Droite
+Space - Shoot
 Shift - Vitesse"
 KEY_GRAPHICS,Graphics,Gráficos,Grafik,Grafika,Grafica,Gráficos,Graphique
 KEY_WINDOW_TYPE,Window Type,Tipo de ventana,Fenstertyp,Typ Okna,Tipo di finestra,Tipo de janela,Type de fenêtre
@@ -110,52 +110,52 @@ KEY_Light,Light,Brillante,Hell,Jasny,Luminoso,Brilhante,Brillant
 KEY_Solarized_dark,Solarized Dark,Oscuridad solarizada,Solarized Dark,Solaryzowany Ciemny,Solarized Dark,Escuro Solarizado,Dark Solarized
 KEY_Solarized_light,Solarized Light,Luz solarizada,Solarisiertes Licht,Solaryzowany Jasny,Solarized Bright,Brilhante Solarizado,Lumineux Solarisé
 KEY_FULL_HEALTH,Full Health,Salud completa,Volle Gesundheit,Pełne Zdrowie,Piena salute,Saúde Máxima,Pleine santé
-KEY_Continue,Continue,Continuar,Fortsetzen,Kontynuuj,Continua,Continuar,Continuer
+KEY_Continue,Continue (BETA!!!),Continuar (BETA!!!),Fortsetzen (BETA!!!),Kontynuuj (BETA!!!),Continua (BETA!!!),Continuar (BETA!!!),Continuer (BETA!!!)
 KEY_Licenses,Licenses,Licencias,Lizenzen,Licencje,Licenze,Licenças,Les licences
-KEY_AUTOSAVE_NOT,"This game uses the autosave function.
+KEY_AUTOSAVE_NOT,"This game uses the autosave function. This function is not containing DLCs - Only base game (for now)
 The files are saved on the disk and the removal
 of one of them may result in a loss of
 The game's state
 
 Do not turn off the game,
-While this icon is visible","Este juego utiliza la función de guardado automático.
+While this icon is visible","Este juego utiliza la función de guardado automático. Esta función no contiene DLC: solo juego base (por ahora)
 Los archivos se guardan en el disco y la
 eliminación de uno de ellos puede
 Provocar la pérdida del estado del juego.
 
 
-No apague el juego cuando este icono est? visible","Dieses Spiel verwendet die automatische Speicherfunktion.
+No apague el juego cuando este icono est? visible","Dieses Spiel verwendet die automatische Speicherfunktion. Diese Funktion enthält keine DLCs - Nur Basisspiel (vorerst)
 Die Dateien werden auf der Festplatte gespeichert.
 Wenn Sie eine davon entfernen, kann der Status des Spiels verloren gehen.
 
 
 Schalten Sie das Spiel nicht aus,
-wenn dieses Symbol sichtbar ist","Ta gra używa funkcji autozapisu.
+wenn dieses Symbol sichtbar ist","Ta gra używa funkcji autozapisu. Ta funkcja nie dotyczy DLC – tylko gra podstawowa jest zapisywana
 Pliki zapisywane są na dysku i
 usunięcie chociaż jednego z nich może zaskutkować
 Utratą zapisu stanu gry
 
 
 Nie wyłączaj gry,
-Gdy ta ikona jest widoczna","Questo gioco utilizza la funzione di salvataggio automatico.
+Gdy ta ikona jest widoczna","Questo gioco utilizza la funzione di salvataggio automatico. Questa funzione non contiene DLC - Solo gioco base (per ora)
 I file vengono salvati sul disco e la rimozione
 di uno di essi può comportare la
 perdita dello stato del gioco
 
 
 Non spegnere il gioco
-Uando questa icona ? visibile","Este jogo usa a função de salvamento automático.
+Uando questa icona ? visibile","Este jogo usa a função de salvamento automático. Esta função não contém DLCs - Somente jogo base (por enquanto)
 Os arquivos são salvos no disco e a remoção
 de um deles pode resultar na
 Perda do estado do jogo
 
 
 N?o desligue o jogo quando
-Este ?cone estiver vis?vel","Ce jeu utilise la fonction de sauvegarde automatique.
-Les fichiers sont enregistrés sur le disque et la suppression de
-l?����un d?����entre eux peut entraîner une perte de
-l?����état du jeu.
+Este ?cone estiver vis?vel","Ce jeu utilise la fonction de sauvegarde automatique. Cette fonction ne contient pas de DLC - Uniquement un jeu de base (pour l'instant)
+Les fichiers sont enregistrés sur le disque et la suppression 
+de l'un d'eux peut entraîner une perte de
+L'état du jeu
 
 
-Ne pas ?teindre le jeu
-Quand cette ic?ne est visible"
+N'éteignez pas le jeu,
+Tant que cette icône est visible"

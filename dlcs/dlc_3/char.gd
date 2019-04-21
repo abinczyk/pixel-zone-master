@@ -1,5 +1,6 @@
 extends Control
-
+func _ready():
+	$Panel/HBoxContainer/VBoxContainer/Sprite2.set_modulate(Color(5, 3, 5))
 # Declare member variables here. Examples:
 func _on_character1_pressed():
 	var a = File.new()
