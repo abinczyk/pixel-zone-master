@@ -28,8 +28,8 @@ playback_speed = 0.25
 anims/intro_new = ExtResource( 4 )
 
 [node name="Skip" type="Button" parent="."]
-margin_right = 69.0
-margin_bottom = 20.0
+margin_right = 71.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
 text = "SKIP"
 flat = true

@@ -24,6 +24,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "KEY_AUTOSAVE_NOT"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="Button" type="Button" parent="Panel"]
 anchor_left = 0.5

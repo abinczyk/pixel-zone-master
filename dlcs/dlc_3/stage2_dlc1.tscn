@@ -263,6 +263,7 @@ position = Vector2( 3117.24, 1311.19 )
 
 [node name="music2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
+bus = "Music"
 
 [connection signal="achieve1" from="." to="player" method="_on_stage2_normal_achieve1"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

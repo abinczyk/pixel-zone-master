@@ -250,6 +250,7 @@ shape = SubResource( 3 )
 
 [node name="music2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+bus = "Music"
 
 [node name="Trap" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2923.6, 1845.28 )

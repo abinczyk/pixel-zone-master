@@ -4,10 +4,10 @@
 [ext_resource path="res://scripts/LevelViewport.gd" type="Script" id=2]
 [ext_resource path="res://scripts/UIScaler.gd" type="Script" id=3]
 [ext_resource path="res://scripts/Menu.gd" type="Script" id=4]
-[ext_resource path="res://scripts/scenes/StatsScene/StatsScene.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/OptionsPage.tscn" type="PackedScene" id=6]
-[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=7]
-[ext_resource path="res://scenes/Achievements.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Achievements.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scripts/scenes/StatsScene/StatsScene.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/OptionsPage.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=8]
 [ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=9]
 
 [sub_resource type="ButtonGroup" id=1]
@@ -50,17 +50,24 @@ margin_right = 622.375
 margin_bottom = 600.0
 script = ExtResource( 4 )
 
-[node name="StatsPage" parent="UIScaler/Menu" instance=ExtResource( 5 )]
+[node name="AchievementsPage" parent="UIScaler/Menu" instance=ExtResource( 5 )]
+visible = false
+margin_left = 407.25
+margin_top = 2.25
+margin_right = 407.25
+margin_bottom = 2.25
+
+[node name="StatsPage" parent="UIScaler/Menu" instance=ExtResource( 6 )]
 visible = false
 margin_left = 1098.25
 margin_top = -0.75
 margin_right = 943.251
 margin_bottom = 61.25
 
-[node name="OptionsPage" parent="UIScaler/Menu" instance=ExtResource( 6 )]
+[node name="OptionsPage" parent="UIScaler/Menu" instance=ExtResource( 7 )]
 visible = false
-margin_left = 479.251
-margin_right = 479.251
+margin_left = 413.0
+margin_right = 398.0
 
 [node name="HBoxContainer" type="VBoxContainer" parent="UIScaler/Menu"]
 modulate = Color( 1, 0.956863, 0.956863, 1 )
@@ -82,7 +89,7 @@ margin_right = 230.0
 margin_bottom = 71.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "KEY_SAVE"
 flat = true
@@ -92,7 +99,7 @@ margin_right = 230.0
 margin_bottom = 110.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "KEY_Return"
 flat = true
@@ -103,7 +110,7 @@ margin_right = 230.0
 margin_bottom = 224.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 1 )
@@ -116,7 +123,7 @@ margin_right = 230.0
 margin_bottom = 338.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 1 )
@@ -129,7 +136,7 @@ margin_right = 230.0
 margin_bottom = 452.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 1 )
@@ -142,19 +149,12 @@ margin_right = 230.0
 margin_bottom = 567.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 1 )
 text = "KEY_ACH"
 flat = true
-
-[node name="AchievementsPage" parent="UIScaler/Menu" instance=ExtResource( 8 )]
-visible = false
-margin_left = 407.25
-margin_top = 2.25
-margin_right = 407.25
-margin_bottom = 2.25
 
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="UIScaler/Menu"]
 volume_db = -10.0

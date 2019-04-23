@@ -17,6 +17,7 @@ _global_script_class_icons={
 
 config/name="Pixel Zone"
 run/main_scene="res://scenes/intro.tscn"
+config/project_settings_override="user://config.cfg"
 config/icon="res://icon.png"
 boot_splash/application/name_pl=""
 boot_splash/application/name_en=""
@@ -36,7 +37,6 @@ background_load="*res://scenes/background_load.tscn"
 screenshot="*res://scripts/screenshot.gd"
 gamestate="*res://multiplayer-mode/gamestate.gd"
 save_load="*res://save_load.tscn"
-Achievements="*res://meta/achievements/AchievementsDictionary.gd"
 
 [compression]
 
@@ -186,5 +186,8 @@ ssl/certificates="res://www.github.com.crt"
 [rendering]
 
 quality/driver/driver_name="GLES2"
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+quality/2d/use_pixel_snap=true
 vram_compression/import_etc=true
 environment/default_environment="res://default_env.tres"

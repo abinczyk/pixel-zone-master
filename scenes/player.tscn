@@ -574,12 +574,12 @@ bus = "SFX"
 layer = 0
 
 [node name="timer" parent="ui" instance=ExtResource( 9 )]
-anchor_left = 1.0
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.0
-margin_left = -80.0123
-margin_top = -5.18518
-margin_right = 5.72852
-margin_bottom = 28.6667
+margin_left = -42.8704
+margin_right = 42.8704
+margin_bottom = 33.8519
 
 [node name="Control" type="Control" parent="ui"]
 anchor_right = 1.0
@@ -632,10 +632,6 @@ action = "shoot"
 visibility_mode = 1
 
 [node name="GameUI" parent="ui/Control" instance=ExtResource( 17 )]
-margin_left = 1.43365
-margin_top = -38.7053
-margin_right = 1.43365
-margin_bottom = -38.7053
 
 [node name="Label" type="Label" parent="ui/Control"]
 margin_left = -162.667
@@ -658,6 +654,13 @@ margin_bottom = 17.0
 custom_fonts/font = ExtResource( 2 )
 text = "Start!"
 align = 1
+
+[node name="fps" type="Label" parent="ui/Control"]
+visible = false
+margin_left = 77.0
+margin_top = 1.0
+margin_right = 367.0
+margin_bottom = 47.0
 
 [node name="Sprite" type="Sprite" parent="ui"]
 visible = false

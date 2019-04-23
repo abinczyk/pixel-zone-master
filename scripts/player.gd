@@ -8,6 +8,8 @@ const JUMP_SPEED = 500
 const SIDING_CHANGE_SPEED = 10
 const BULLET_VELOCITY = 1000
 const SHOOT_TIME_SHOW_WEAPON = 0.2
+const TIMER_LIMIT = 2.0
+var timer = 0.0
 var linear_vel = Vector2()
 var onair_time = 0 #
 var teleport_destination
@@ -20,12 +22,14 @@ var anim=""
 onready var sprite = $sprite
 onready var respawn_position
 func _ready():
+	$ui/Control/GameUI.connect("FPSHide", self, "_on_fps_hide")
+	$ui/Control/GameUI.connect("FPSShow", self, "_on_fps_show")
 	respawn_position = position
 	$"/root/game_health".points == 0
 	$ui/AnimationPlayer.play("saving_state")
 func _physics_process(delta):
 	if $ui/Control/ProgressBar.value == 0:
-		get_tree().chamge_scene("scenes/GameOver.tscn")
+		get_tree().change_scene("scenes/GameOver.tscn")
 	onair_time += delta
 	shoot_time += delta
 
@@ -142,6 +146,15 @@ func teleport(destination):
 
 func do_teleport():
 	position = teleport_destination
+func _process(delta):
+    timer += delta
+    if timer > TIMER_LIMIT: # Prints every 2 seconds
+        timer = 0.0
+        $ui/Control/fps.set_text("FPS: " + str(Engine.get_frames_per_second()))
 
 func respawn():
 	teleport(respawn_position)
+func _on_fps_show():
+	$ui/Control/fps.show()
+func _on_fps_hide():
+	$ui/Control/fps.hide()

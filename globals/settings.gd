@@ -16,6 +16,7 @@ var window_fullscreen setget _set_window_fullscreen, _get_window_fullscreen
 
 ## vars used by settings window
 var temp_window_type_id = 0
+var temp_Pixel_snap = true
 var temp_vsync_enabled = true
 var temp_window_size = Vector2(1024, 600)
 

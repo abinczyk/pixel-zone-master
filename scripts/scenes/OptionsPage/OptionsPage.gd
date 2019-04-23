@@ -7,6 +7,7 @@ func _process(delta):
 	tab_container.set_tab_title(3, "KEY_G_A")
 	tab_container.set_tab_title(4, "KEY_CONTROLLER")
 func _on_ApplyButton_pressed():
+	ProjectSettings.save()
 	hide()
 func _on_Englisch_pressed():
 	TranslationServer.set_locale("en")
@@ -22,5 +23,8 @@ func _on_Portuguese_pressed():
 	TranslationServer.set_locale("pt")
 func _on_French_pressed():
 	TranslationServer.set_locale("fr")
+
+
+
 
 
