@@ -1,0 +1,19 @@
+# Import cache
+.import/
+
+# exported game files
+.export/
+
+# addons
+addons/
+git_api.*
+
+# Binaries
+bin/
+build/
+lib/
+
+# file extension
+*.png.import
+*.jpg.import
+*.*.import

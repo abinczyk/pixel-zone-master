@@ -10,12 +10,18 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 2 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Viewport" type="Viewport" parent="."]
 
@@ -33,6 +39,8 @@ margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
 text = "SKIP"
 flat = true
-
+__meta__ = {
+"_edit_use_anchors_": true
+}
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="pressed" from="Skip" to="." method="_on_Skip_pressed"]
